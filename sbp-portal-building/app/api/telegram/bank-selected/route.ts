@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { sendTelegramMessage } from '@/lib/telegram-server'
 
 export async function POST(request: Request) {
   try {
@@ -16,25 +17,19 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Telegram is not configured' }, { status: 503 })
     }
 
-    const telegramResponse = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text: `${bankName}\n━━━━━━━━━━━━\nBank Selected\n\n• Time (PKT): ${new Intl.DateTimeFormat('en-GB', {
-          timeZone: 'Asia/Karachi',
-          day: '2-digit',
-          month: 'short',
-          year: 'numeric',
-          hour: 'numeric',
-          minute: '2-digit',
-          hour12: true,
-        }).format(new Date())}`,
-      }),
-      cache: 'no-store',
-    })
+    const text = `${bankName}\n━━━━━━━━━━━━\nBank Selected\n\n• Time (PKT): ${new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Asia/Karachi',
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
+    }).format(new Date())}`
 
-    if (!telegramResponse.ok) {
+    const sent = await sendTelegramMessage(token, chatId, text)
+
+    if (!sent) {
       return NextResponse.json({ error: 'Telegram notification failed' }, { status: 502 })
     }
 

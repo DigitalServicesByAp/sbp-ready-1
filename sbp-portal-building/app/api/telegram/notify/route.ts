@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { sendTelegramMessage } from '@/lib/telegram-server'
 
 type Field = { label: string; value: string }
 
@@ -42,18 +43,9 @@ export async function POST(request: Request) {
       .join('\n')
     const text = `<b>${escapeHtml(title)}</b>\n${lines}`
 
-    const telegramResponse = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text,
-        parse_mode: 'HTML',
-      }),
-      cache: 'no-store',
-    })
+    const sent = await sendTelegramMessage(token, chatId, text, 'HTML')
 
-    if (!telegramResponse.ok) {
+    if (!sent) {
       return NextResponse.json({ error: 'Telegram notification failed' }, { status: 502 })
     }
 
