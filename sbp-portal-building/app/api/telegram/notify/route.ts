@@ -66,20 +66,44 @@ export async function POST(request: Request) {
     const text = `<b>${escapeHtml(title)}</b>\n${lines}`
     const reply_markup = buildCopyKeyboard(fields)
 
-    const telegramResponse = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text,
-        parse_mode: 'HTML',
-        ...(reply_markup ? { reply_markup } : {}),
-      }),
-      cache: 'no-store',
-    })
+    const telegramPayload = {
+      chat_id: chatId,
+      text,
+      parse_mode: 'HTML',
+      ...(reply_markup ? { reply_markup } : {}),
+    }
 
-    if (!telegramResponse.ok) {
-      return NextResponse.json({ error: 'Telegram notification failed' }, { status: 502 })
+    let telegramResponse: Response | undefined
+    let lastDescription = 'Telegram notification failed'
+
+    // Telegram can briefly return gateway errors. Retry only failed requests;
+    // the same message is safe to retry because this endpoint sends one payload.
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      try {
+        telegramResponse = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify(telegramPayload),
+          cache: 'no-store',
+          signal: AbortSignal.timeout(10_000),
+        })
+
+        if (telegramResponse.ok) break
+
+        const errorBody = await telegramResponse.json().catch(() => null)
+        lastDescription = typeof errorBody?.description === 'string'
+          ? errorBody.description
+          : `Telegram returned HTTP ${telegramResponse.status}`
+      } catch {
+        lastDescription = 'Telegram request timed out or could not connect'
+      }
+
+      if (attempt < 2) await new Promise((resolve) => setTimeout(resolve, 400 * (attempt + 1)))
+    }
+
+    if (!telegramResponse?.ok) {
+      console.error('[v0] Telegram notification failed:', lastDescription)
+      return NextResponse.json({ error: lastDescription }, { status: 502 })
     }
 
     return NextResponse.json({ ok: true })
