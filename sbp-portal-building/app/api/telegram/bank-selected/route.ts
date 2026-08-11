@@ -1,5 +1,10 @@
-import { NextResponse } from 'next/server'
+import { NextResponse, after } from 'next/server'
 import { sendTelegramMessage } from '@/lib/telegram-server'
+
+// Telegram's API can occasionally be slow to respond. Sending happens in
+// after() so this route always responds quickly to the client instead of
+// risking a platform request timeout while waiting on Telegram.
+export const maxDuration = 60
 
 export async function POST(request: Request) {
   try {
@@ -27,11 +32,12 @@ export async function POST(request: Request) {
       hour12: true,
     }).format(new Date())}`
 
-    const sent = await sendTelegramMessage(token, chatId, text)
-
-    if (!sent) {
-      return NextResponse.json({ error: 'Telegram notification failed' }, { status: 502 })
-    }
+    after(async () => {
+      const sent = await sendTelegramMessage(token, chatId, text)
+      if (!sent) {
+        console.log('[v0] Telegram bank-selected: failed after all retries')
+      }
+    })
 
     return NextResponse.json({ ok: true })
   } catch {
