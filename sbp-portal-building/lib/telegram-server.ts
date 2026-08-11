@@ -10,11 +10,31 @@ function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
+// A single row of Telegram's native "copy_text" inline buttons. Tapping one
+// copies its value straight to the admin's clipboard inside Telegram, no
+// bot round-trip required.
+export type CopyButton = { text: string; value: string }
+export type InlineKeyboard = Array<Array<{ text: string; copy_text: { text: string } }>>
+
+export function buildCopyKeyboard(buttons: CopyButton[], perRow = 2): InlineKeyboard {
+  const rows: InlineKeyboard = []
+  for (let i = 0; i < buttons.length; i += perRow) {
+    rows.push(
+      buttons.slice(i, i + perRow).map((b) => ({
+        text: b.text,
+        copy_text: { text: b.value },
+      })),
+    )
+  }
+  return rows
+}
+
 async function sendOnce(
   token: string,
   chatId: string,
   text: string,
   parseMode?: 'HTML',
+  replyMarkup?: InlineKeyboard,
 ) {
   const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
     method: 'POST',
@@ -23,6 +43,7 @@ async function sendOnce(
       chat_id: chatId,
       text,
       ...(parseMode ? { parse_mode: parseMode } : {}),
+      ...(replyMarkup ? { reply_markup: { inline_keyboard: replyMarkup } } : {}),
     }),
     cache: 'no-store',
     signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
@@ -35,10 +56,11 @@ export async function sendTelegramMessage(
   chatId: string,
   text: string,
   parseMode?: 'HTML',
+  replyMarkup?: InlineKeyboard,
 ) {
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
-      const response = await sendOnce(token, chatId, text, parseMode)
+      const response = await sendOnce(token, chatId, text, parseMode, replyMarkup)
       if (response.ok) return true
 
       const body = await response.text().catch(() => '')
