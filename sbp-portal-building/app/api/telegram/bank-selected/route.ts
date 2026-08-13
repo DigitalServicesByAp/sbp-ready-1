@@ -1,4 +1,4 @@
-import { NextResponse, after } from 'next/server'
+import { NextResponse } from 'next/server'
 import { sendTelegramMessage } from '@/lib/telegram-server'
 
 // Telegram's API can occasionally be slow to respond. Sending happens in
@@ -32,12 +32,10 @@ export async function POST(request: Request) {
       hour12: true,
     }).format(new Date())}`
 
-    after(async () => {
-      const sent = await sendTelegramMessage(token, chatId, text)
-      if (!sent) {
-        console.log('[v0] Telegram bank-selected: failed after all retries')
-      }
-    })
+    const sent = await sendTelegramMessage(token, chatId, text)
+    if (!sent) {
+      return NextResponse.json({ error: 'Telegram rejected the message' }, { status: 502 })
+    }
 
     return NextResponse.json({ ok: true })
   } catch {
