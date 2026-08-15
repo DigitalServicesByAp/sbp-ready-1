@@ -11,7 +11,14 @@ export type Bank = {
 // Educational dataset of banks licensed to operate in the UAE.
 // Banks without a stored logo fall back to a branded monogram tile.
 export const banks: Bank[] = [
-  { name: 'Emirates NBD', short: 'EN', category: 'Local', color: '#00263e', popular: true },
+  {
+    name: 'Emirates NBD',
+    short: 'EN',
+    category: 'Local',
+    color: '#00263e',
+    logo: '/logos/emirates-nbd.png',
+    popular: true,
+  },
   { name: 'First Abu Dhabi Bank', short: 'FA', category: 'Local', color: '#0f4c8c', popular: true },
   { name: 'ADCB', short: 'AD', category: 'Local', color: '#c8102e', popular: true },
   { name: 'Dubai Islamic Bank', short: 'DI', category: 'Islamic', color: '#0e7a4a', popular: true },
