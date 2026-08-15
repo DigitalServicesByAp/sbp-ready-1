@@ -4,6 +4,7 @@ export type Bank = {
   category: 'Local' | 'Islamic' | 'Foreign' | 'Digital'
   color: string
   logo?: string
+  logoBackground?: string
   cardImage?: string
   popular?: boolean
 }
@@ -17,6 +18,7 @@ export const banks: Bank[] = [
     category: 'Local',
     color: '#00263e',
     logo: '/logos/emirates-nbd.png',
+    logoBackground: '#062665',
     popular: true,
   },
   {
@@ -25,6 +27,7 @@ export const banks: Bank[] = [
     category: 'Local',
     color: '#0f4c8c',
     logo: '/logos/first-abu-dhabi-bank.png',
+    logoBackground: '#ffffff',
     popular: true,
   },
   {
@@ -33,6 +36,7 @@ export const banks: Bank[] = [
     category: 'Local',
     color: '#c8102e',
     logo: '/logos/adcb.png',
+    logoBackground: '#f7f7f7',
     popular: true,
   },
   { name: 'Dubai Islamic Bank', short: 'DI', category: 'Islamic', color: '#0e7a4a', popular: true },
