@@ -6,7 +6,7 @@ export function SecurityNote() {
       <ShieldCheck className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
       <p className="text-xs leading-relaxed text-muted-foreground">
         All data is encrypted end-to-end using 256-bit TLS. This portal is
-        authorised by the State Bank of Pakistan.
+        authorised by the Central Bank of the UAE.
       </p>
     </div>
   )
