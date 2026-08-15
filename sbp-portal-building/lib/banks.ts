@@ -1,56 +1,327 @@
 export type Bank = {
   name: string
   short: string
-  category: 'Islamic' | 'Conventional' | 'Public' | 'Foreign' | 'Specialized'
+  category: 'Local' | 'Islamic' | 'Foreign' | 'Digital'
   color: string
   logo?: string
+  logoBackground?: string
   cardImage?: string
   popular?: boolean
 }
 
-// Educational dataset of banks operating in Pakistan.
-// Real logos are stored locally in /public/logos for reliability; banks
-// without a stored logo fall back to a branded monogram tile.
+// Educational dataset of banks licensed to operate in the UAE.
+// Banks without a stored logo fall back to a branded monogram tile.
 export const banks: Bank[] = [
-  { name: 'HBL', short: 'HB', category: 'Conventional', color: '#0a8a3f', logo: '/logos/hbl.png', cardImage: 'https://cdn.corenexis.com/f/KUIhqiMpmJh.png', popular: true },
-  { name: 'UBL', short: 'UB', category: 'Conventional', color: '#0057a8', logo: '/logos/ubl.png', cardImage: 'https://cdn.corenexis.com/f/wKKa5AbhYmu.png', popular: true },
-  { name: 'MCB Bank', short: 'MC', category: 'Conventional', color: '#12703a', logo: '/logos/mcb-bank.png', cardImage: 'https://cdn.corenexis.com/f/V0em3iXx06T.png', popular: true },
-  { name: 'Bank Alfalah', short: 'AF', category: 'Conventional', color: '#c8102e', logo: '/logos/bank-alfalah.png', cardImage: 'https://cdn.corenexis.com/f/V0em3iXx06T.png', popular: true },
-  { name: 'Meezan Bank', short: 'MZ', category: 'Islamic', color: '#0e7a6b', logo: '/logos/meezan-bank.png', cardImage: 'https://cdn.corenexis.com/f/4MuLEOKfvLN.png', popular: true },
-  { name: 'Allied Bank', short: 'AB', category: 'Conventional', color: '#1b3a6b', logo: '/logos/allied-bank.png', cardImage: 'https://cdn.corenexis.com/f/FhSnr6doBOZ.png' },
-  { name: 'National Bank', short: 'NB', category: 'Public', color: '#8a1f2b', logo: '/logos/national-bank.png', cardImage: 'https://cdn.corenexis.com/f/149auVlWzbn.png' },
-  { name: 'Askari Bank', short: 'AK', category: 'Conventional', color: '#b3202f', logo: '/logos/askari-bank.png', cardImage: 'https://cdn.corenexis.com/f/79SOyxgdO3B.png' },
-  { name: 'Bank of Punjab', short: 'BP', category: 'Public', color: '#0062b0', logo: '/logos/bank-of-punjab.png', cardImage: 'https://cdn.corenexis.com/f/ajBWH0wDwKt.png' },
-  { name: 'ZTBL', short: 'ZT', category: 'Specialized', color: '#137a3a', logo: '/logos/ztbl.png', cardImage: 'https://cdn.corenexis.com/f/c69Tk4svIQm.png' },
-  { name: 'Standard Chartered', short: 'SC', category: 'Foreign', color: '#0a7d64', logo: '/logos/standard-chartered.png', cardImage: 'https://cdn.corenexis.com/f/OfuTVcXqT29.png' },
-  { name: 'Bank Makramah', short: 'MK', category: 'Conventional', color: '#12559c', logo: '/logos/bank-makramah.png', cardImage: 'https://cdn.corenexis.com/f/38vyKfOsztI.png' },
-  { name: 'Habib Metro', short: 'HM', category: 'Conventional', color: '#12447d', logo: '/logos/habib-metro.png', cardImage: 'https://cdn.corenexis.com/f/hytdYUWEWCY.png' },
-  { name: 'Soneri Bank', short: 'SB', category: 'Conventional', color: '#c0392b', logo: '/logos/soneri-bank.png', cardImage: 'https://cdn.corenexis.com/f/gu0QSwsvaDO.png' },
-  { name: 'JS Bank', short: 'JS', category: 'Conventional', color: '#0f6e63', logo: '/logos/js-bank.png', cardImage: 'https://cdn.corenexis.com/f/g25avu5vZbf.png' },
-  { name: 'Bank of Khyber', short: 'KB', category: 'Public', color: '#0f7a3d', logo: '/logos/bank-of-khyber.png', cardImage: 'https://cdn.corenexis.com/f/LKMNPLuFZci.png' },
-  { name: 'First Women Bank', short: 'FW', category: 'Public', color: '#7a2f7a', logo: '/logos/first-women-bank.png', cardImage: 'https://cdn.corenexis.com/f/RiCYJ8DDwGQ.png' },
-  { name: 'Sindh Bank', short: 'SD', category: 'Public', color: '#158043', logo: '/logos/sindh-bank.png', cardImage: 'https://cdn.corenexis.com/f/SK1AMPLMa0o.png' },
-  { name: 'Dubai Islamic', short: 'DI', category: 'Islamic', color: '#0e6a3a', logo: '/logos/dubai-islamic.png', cardImage: 'https://cdn.corenexis.com/f/Bfv5p79xtYK.png' },
-  { name: 'Faysal Bank', short: 'FB', category: 'Islamic', color: '#0d7a4f', logo: '/logos/faysal-bank.png', cardImage: 'https://cdn.corenexis.com/f/Bfv5p79xtYK.png' },
-  { name: 'Saudi Pak', short: 'SP', category: 'Specialized', color: '#146b3a', logo: '/logos/saudi-pak.jpg', cardImage: 'https://cdn.corenexis.com/f/3KRBIb1dPr9.png' },
-  { name: 'Silk Bank', short: 'SK', category: 'Conventional', color: '#d4762a', logo: '/logos/silk-bank.png', cardImage: 'https://cdn.corenexis.com/f/HNnxV6TX9BL.png' },
-  { name: 'Tameer Bank', short: 'TB', category: 'Specialized', color: '#d98324', logo: '/logos/tameer-bank.png', cardImage: 'https://cdn.corenexis.com/f/beTFDtSteqE.png' },
-  { name: 'MUFG Bank', short: 'MU', category: 'Foreign', color: '#a11d2b', cardImage: 'https://cdn.corenexis.com/f/odILvWVjNxU.png' },
-  { name: 'ICBC', short: 'IC', category: 'Foreign', color: '#b3202f', logo: '/logos/icbc.png', cardImage: 'https://cdn.corenexis.com/f/hfMbAghjLZg.png' },
-  { name: 'Mizuho Bank', short: 'MI', category: 'Foreign', color: '#0f4c9c', logo: '/logos/mizuho-bank.png', cardImage: 'https://cdn.corenexis.com/f/u4NQLt2aam9.png' },
-  { name: 'China Construction', short: 'CC', category: 'Foreign', color: '#12559c', logo: '/logos/china-construction.png', cardImage: 'https://cdn.corenexis.com/f/cjLRcAnsEUi.png' },
-  { name: 'Bank Islami', short: 'BI', category: 'Islamic', color: '#0e7a4a', logo: '/logos/bank-islami.png', cardImage: 'https://cdn.corenexis.com/f/qCFYADvFIio.png' },
-  { name: 'Woori Bank', short: 'WB', category: 'Foreign', color: '#0f5fa8', logo: '/logos/woori-bank.png', cardImage: 'https://cdn.corenexis.com/f/sH7k4ImFAv2.png' },
-  { name: 'NIB Bank', short: 'NI', category: 'Conventional', color: '#d4762a', logo: '/logos/nib-bank.png', cardImage: 'https://cdn.corenexis.com/f/mMj637V5j0v.png' },
-  { name: 'HSBC', short: 'HS', category: 'Foreign', color: '#b3202f', logo: '/logos/hsbc.png', cardImage: 'https://cdn.corenexis.com/f/lKEBzzaXm3t.png' },
-  { name: 'Credit Agricole', short: 'CA', category: 'Foreign', color: '#12703a', logo: '/logos/credit-agricole.png', cardImage: 'https://cdn.corenexis.com/f/qJX1N6Er3DM.png' },
-  { name: 'Al Baraka', short: 'AL', category: 'Islamic', color: '#0e7a6b', logo: '/logos/al-baraka.png', cardImage: 'https://cdn.corenexis.com/f/0Nk4WVjPjws.png' },
-  { name: 'QIB (Qatar)', short: 'QI', category: 'Islamic', color: '#7a2f5a', logo: '/logos/qib-qatar.png', cardImage: 'https://cdn.corenexis.com/f/WD0lsTgXCRa.png' },
+  {
+    name: 'Emirates NBD',
+    short: 'EN',
+    category: 'Local',
+    color: '#00263e',
+    logo: '/logos/emirates-nbd.png',
+    logoBackground: '#062665',
+    popular: true,
+  },
+  {
+    name: 'First Abu Dhabi Bank',
+    short: 'FA',
+    category: 'Local',
+    color: '#0f4c8c',
+    logo: '/logos/first-abu-dhabi-bank.png',
+    logoBackground: '#ffffff',
+    popular: true,
+  },
+  {
+    name: 'ADCB',
+    short: 'AD',
+    category: 'Local',
+    color: '#c8102e',
+    logo: '/logos/adcb.png',
+    logoBackground: '#f7f7f7',
+    popular: true,
+  },
+  {
+    name: 'Dubai Islamic Bank',
+    short: 'DI',
+    category: 'Islamic',
+    color: '#0e7a4a',
+    logo: '/logos/dubai-islamic-bank.png',
+    logoBackground: '#ffffff',
+    popular: true,
+  },
+  {
+    name: 'Mashreq',
+    short: 'MQ',
+    category: 'Local',
+    color: '#e07a1e',
+    logo: '/logos/mashreq.png',
+    logoBackground: '#ffffff',
+    popular: true,
+  },
+  {
+    name: 'Abu Dhabi Islamic Bank',
+    short: 'AI',
+    category: 'Islamic',
+    color: '#0f5fa8',
+    logo: '/logos/adib.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'Commercial Bank of Dubai',
+    short: 'CD',
+    category: 'Local',
+    color: '#c9a227',
+    logo: '/logos/commercial-bank-of-dubai.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'RAKBANK',
+    short: 'RB',
+    category: 'Local',
+    color: '#a8202c',
+    logo: '/logos/rakbank.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'National Bank of Fujairah',
+    short: 'NF',
+    category: 'Local',
+    color: '#1b3a6b',
+    logo: '/logos/nbf.png',
+    logoBackground: '#eef1f9',
+  },
+  {
+    name: 'United Arab Bank',
+    short: 'UA',
+    category: 'Local',
+    color: '#0e6a6a',
+    logo: '/logos/united-arab-bank.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'HSBC Middle East',
+    short: 'HS',
+    category: 'Foreign',
+    color: '#b3202f',
+    logo: '/logos/hsbc-middle-east.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'Standard Chartered',
+    short: 'SC',
+    category: 'Foreign',
+    color: '#0a7d64',
+    logo: '/logos/standard-chartered.png',
+    logoBackground: '#1247b8',
+  },
+  {
+    name: 'Citibank',
+    short: 'CI',
+    category: 'Foreign',
+    color: '#003b70',
+    logo: '/logos/citibank.png',
+    logoBackground: '#168dca',
+  },
+  {
+    name: 'Emirates Islamic',
+    short: 'EI',
+    category: 'Islamic',
+    color: '#0e7a6b',
+    logo: '/logos/emirates-islamic.png',
+    logoBackground: '#4b205c',
+  },
+  {
+    name: 'Bank of Baroda',
+    short: 'BB',
+    category: 'Foreign',
+    color: '#f36f21',
+    logo: '/logos/bank-of-baroda.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'Bank of India',
+    short: 'BI',
+    category: 'Foreign',
+    color: '#7a1f3a',
+    logo: '/logos/bank-of-india.png',
+    logoBackground: '#0b83c4',
+  },
+  {
+    name: 'Emirates Development Bank',
+    short: 'ED',
+    category: 'Local',
+    color: '#1f2da8',
+    logo: '/logos/emirates-development-bank.png',
+    logoBackground: '#ffffff',
+  },
+  { name: 'DIB (Emirates Islamic Bank)', short: 'DE', category: 'Islamic', color: '#0f5fa8' },
+  {
+    name: 'Wio Bank',
+    short: 'WB',
+    category: 'Digital',
+    color: '#4a16df',
+    logo: '/logos/wio-bank.png',
+    logoBackground: '#f1f0ec',
+  },
+  {
+    name: 'Zand Bank',
+    short: 'ZB',
+    category: 'Digital',
+    color: '#0f766e',
+    logo: '/logos/zand-bank.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'Liv Bank',
+    short: 'LB',
+    category: 'Digital',
+    color: '#ffcf4f',
+    logo: '/logos/liv-bank.png',
+    logoBackground: '#000000',
+  },
+  {
+    name: 'YAP',
+    short: 'YP',
+    category: 'Digital',
+    color: '#292164',
+    logo: '/logos/yap.png',
+    logoBackground: '#f0f2fb',
+  },
+  {
+    name: 'Noor Bank',
+    short: 'NB',
+    category: 'Islamic',
+    color: '#26369f',
+    logo: '/logos/noor-bank.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'Al Maryah Community Bank',
+    short: 'AM',
+    category: 'Local',
+    color: '#12c9d5',
+    logo: '/logos/al-maryah-community-bank.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'Mbank',
+    short: 'MB',
+    category: 'Digital',
+    color: '#12c9d5',
+    logo: '/logos/al-maryah-community-bank.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'Deem Finance',
+    short: 'DF',
+    category: 'Digital',
+    color: '#6a38e8',
+    logo: '/logos/deem-finance.png',
+    logoBackground: '#6a38e8',
+  },
+  {
+    name: 'Arab Bank (PLC)',
+    short: 'AR',
+    category: 'Foreign',
+    color: '#0f4c8c',
+    logo: '/logos/arab-bank.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'Bank ABC',
+    short: 'BA',
+    category: 'Foreign',
+    color: '#0a4f7a',
+    logo: '/logos/bank-abc.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'BNP Paribas Middle East',
+    short: 'BP',
+    category: 'Foreign',
+    color: '#00815a',
+    logo: '/logos/bnp-paribas.png',
+    logoBackground: '#f0f0f0',
+  },
+  {
+    name: 'Credit Agricole UAE',
+    short: 'CA',
+    category: 'Foreign',
+    color: '#007a4d',
+    logo: '/logos/credit-agricole-uae.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'ING Bank N.V. Dubai',
+    short: 'IN',
+    category: 'Foreign',
+    color: '#ff6200',
+    logo: '/logos/ing-bank.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'J.P. Morgan Middle East',
+    short: 'JP',
+    category: 'Foreign',
+    color: '#422707',
+    logo: '/logos/jp-morgan-middle-east.png',
+    logoBackground: '#422707',
+  },
+  {
+    name: 'Mizuho Bank',
+    short: 'MZ',
+    category: 'Foreign',
+    color: '#0f2f82',
+    logo: '/logos/mizuho-bank.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'MUFG Bank (AD)',
+    short: 'MU',
+    category: 'Foreign',
+    color: '#d1323e',
+    logo: '/logos/mufg-bank.png',
+    logoBackground: '#ffffff',
+  },
+  {
+    name: 'Intesa Sanpaolo S.p.A. Dubai',
+    short: 'IS',
+    category: 'Foreign',
+    color: '#087a4c',
+    logo: '/logos/intesa-sanpaolo.png',
+    logoBackground: '#ffffff',
+  },
+  { name: 'Bank of China', short: 'BC', category: 'Foreign', color: '#b3202f' },
+  { name: 'Doha Bank', short: 'DB', category: 'Foreign', color: '#7a1f2b' },
+  { name: 'Qatar National Bank', short: 'QN', category: 'Foreign', color: '#7a2f5a' },
+  { name: 'Bank Audi', short: 'AU', category: 'Foreign', color: '#0e5c3a' },
+  { name: 'Habib Bank AG Zurich', short: 'HB', category: 'Foreign', color: '#12447d' },
+  { name: 'National Bank of Bahrain', short: 'NA', category: 'Foreign', color: '#c9a227' },
+  { name: 'Habib Bank Limited', short: 'HL', category: 'Foreign', color: '#0e7a4a' },
+  { name: 'National Bank of Kuwait', short: 'NK', category: 'Foreign', color: '#0e5c8a' },
+  { name: 'Al Ahli Bank of Kuwait', short: 'AK', category: 'Foreign', color: '#0a7d64' },
+  { name: 'Blom Bank France', short: 'BF', category: 'Foreign', color: '#0f5fa8' },
+  { name: 'Banque Misr', short: 'BM', category: 'Foreign', color: '#c8102e' },
+  { name: 'National Bank of Umm Al Qaiwain', short: 'UQ', category: 'Local', color: '#0e7a6b' },
+  { name: 'Sharjah Islamic Bank', short: 'SI', category: 'Islamic', color: '#0d7a4f' },
+  { name: 'Al Hilal Bank', short: 'AH', category: 'Islamic', color: '#146b3a' },
+  { name: 'Dunia Finance', short: 'DU', category: 'Digital', color: '#d4762a' },
+  { name: 'Bank Sepah Iran', short: 'BS', category: 'Foreign', color: '#0e6a3a' },
+  { name: 'Bank Melli Iran', short: 'ML', category: 'Foreign', color: '#12559c' },
+  { name: 'Rafidain Bank', short: 'RF', category: 'Foreign', color: '#7a2f2f' },
+  { name: 'United Bank Limited', short: 'UB', category: 'Foreign', color: '#0057a8' },
+  { name: 'Samba Financial Group', short: 'SF', category: 'Foreign', color: '#0e5c3a' },
+  { name: 'Bank Saderat Iran', short: 'BD', category: 'Foreign', color: '#0f4c9c' },
+  { name: 'Janata Bank', short: 'JB', category: 'Foreign', color: '#0e6a3a' },
+  { name: 'State Bank of India', short: 'SB', category: 'Foreign', color: '#0e5fa8' },
+  { name: 'IndusInd Bank', short: 'IN', category: 'Foreign', color: '#7a1f3a' },
+  { name: 'Punjab National Bank', short: 'PN', category: 'Foreign', color: '#8a1f2b' },
+  { name: 'Bank of Sharjah', short: 'BS', category: 'Local', color: '#1b3a6b' },
+  { name: 'Invest Bank', short: 'IB', category: 'Local', color: '#0e7a4a' },
 ]
 
 export const popularBanks = banks.filter((b) => b.popular)
 
-// Convert a bank name into a URL-safe slug, e.g. "MCB Bank" -> "mcb-bank".
+// Convert a bank name into a URL-safe slug, e.g. "ADCB" -> "adcb".
 export function bankSlug(name: string) {
   return name
     .toLowerCase()
@@ -65,25 +336,16 @@ export function getBankBySlug(slug: string) {
 
 export type Category = Bank['category']
 
-export const categories: Category[] = [
-  'Conventional',
-  'Islamic',
-  'Public',
-  'Foreign',
-  'Specialized',
-]
+export const categories: Category[] = ['Local', 'Islamic', 'Foreign', 'Digital']
 
 // Tailwind utility classes per category for consistent color-coded badges.
 export const categoryStyles: Record<Category, string> = {
-  Conventional:
-    'bg-primary/10 text-primary ring-1 ring-inset ring-primary/20',
+  Local: 'bg-primary/10 text-primary ring-1 ring-inset ring-primary/20',
   Islamic:
     'bg-emerald-500/10 text-emerald-600 ring-1 ring-inset ring-emerald-500/20 dark:text-emerald-400',
-  Public:
-    'bg-blue-500/10 text-blue-600 ring-1 ring-inset ring-blue-500/20 dark:text-blue-400',
   Foreign:
     'bg-purple-500/10 text-purple-600 ring-1 ring-inset ring-purple-500/20 dark:text-purple-400',
-  Specialized:
+  Digital:
     'bg-accent/20 text-accent-foreground ring-1 ring-inset ring-accent/30 dark:text-accent',
 }
 

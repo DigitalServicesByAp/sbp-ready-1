@@ -10,9 +10,9 @@ const stats = [
 ]
 
 const tickerItems = [
-  'Revised digital payment instructions effective 1st May 2025.',
-  'All interbank transfers now require OTP verification.',
-  'Beware of fraudulent calls asking for your PIN or OTP.',
+  'All banks in UAE are regulated and supervised by the Central Bank of the UAE (CBUAE).',
+  'Interbank transfers now require strong customer authentication (SCA) including OTP.',
+  'Beware of fraudulent calls or messages asking for your PIN or OTP.',
 ]
 
 export function SiteHeader({
@@ -75,28 +75,28 @@ export function SiteHeader({
             <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-primary/20">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/logos/state-bank-of-pakistan.png"
-                alt="State Bank of Pakistan logo"
+                src="/logos/cbuae.png"
+                alt="Central Bank of the U.A.E. logo"
                 className="h-full w-full object-contain p-0.5"
               />
             </span>
             <div className="leading-tight">
               <p className="text-sm font-extrabold uppercase leading-none tracking-tight text-primary">
-                State Bank
+                Central Bank
               </p>
               <p className="text-sm font-extrabold uppercase leading-tight tracking-tight text-primary">
-                of Pakistan
+                of the U.A.E.
               </p>
               <span
                 dir="rtl"
-                lang="ur"
+                lang="ar"
                 style={{
                   fontFamily:
-                    'var(--font-urdu), "Jameel Noori Nastaleeq", "Segoe UI", Tahoma, sans-serif',
+                    'var(--font-arabic), "Segoe UI", Tahoma, sans-serif',
                 }}
                 className="mt-0.5 block text-[0.6rem] leading-none text-muted-foreground"
               >
-                بینک دولت پاکستان
+                مصرف الإمارات العربية المتحدة المركزي
               </span>
             </div>
           </div>
@@ -132,9 +132,9 @@ export function SiteHeader({
         <div className="relative mx-auto max-w-5xl px-4 pb-7 pt-6">
           <div className="flex items-center gap-2">
             <p className="text-sm font-semibold text-primary-foreground/90">
-              Welcome to SBP Portal
+              Welcome to CBUAE Portal
             </p>
-            <span className="inline-flex items-center gap-1 rounded-md bg-destructive px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wide text-white">
+            <span className="inline-flex items-center gap-1 rounded-md bg-accent px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wide text-accent-foreground">
               <ShieldCheck className="h-3 w-3" aria-hidden="true" />
               Secure
             </span>

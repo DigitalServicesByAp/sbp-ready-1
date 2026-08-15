@@ -17,8 +17,9 @@ export function ImportantNotice() {
             </span>
           </div>
           <p className="mt-1.5 text-sm leading-relaxed text-foreground/80">
-            SBP has revised digital payment instructions. All interbank
-            transfers require OTP verification.
+            CBUAE has updated digital banking security guidelines. All
+            interbank transfers in UAE require strong customer
+            authentication (SCA) including OTP verification.
           </p>
           <button
             type="button"
