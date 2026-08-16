@@ -505,7 +505,16 @@ export const banks: Bank[] = [
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ianVvQtaxsUwlNHjvgLKJOdIx836Bp.png',
     themeColor: '#9a6718',
   },
-  { name: 'Intesa Sanpaolo S.P.A', short: 'IS', category: 'Foreign', color: '#1b3a6b', logo: '/logos/intesa-sanpaolo.png', logoBackground: '#ffffff' },
+  {
+    name: 'Intesa Sanpaolo S.P.A',
+    short: 'IS',
+    category: 'Foreign',
+    color: '#1b3a6b',
+    logo: '/logos/intesa-sanpaolo.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fed9ei04F15KMrqMVEtfhg53GzOLWE.png',
+    themeColor: '#3f3c38',
+  },
   {
     name: 'Agricultural Bank of China Ltd.',
     short: 'ABC',
