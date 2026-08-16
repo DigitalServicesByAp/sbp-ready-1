@@ -40,8 +40,8 @@ export default async function OtpPage({
     <main
       className="min-h-dvh"
       style={{
-        backgroundColor: `${bank.color}18`,
-        backgroundImage: `linear-gradient(180deg, ${bank.color}2e 0%, ${bank.color}0c 55%, ${bank.color}04 100%)`,
+        backgroundColor: `color-mix(in srgb, ${bank.color} 18%, var(--background))`,
+        backgroundImage: `linear-gradient(180deg, color-mix(in srgb, ${bank.color} 28%, transparent) 0%, color-mix(in srgb, ${bank.color} 10%, transparent) 55%, transparent 100%)`,
       }}
     >
       {/* Header */}
