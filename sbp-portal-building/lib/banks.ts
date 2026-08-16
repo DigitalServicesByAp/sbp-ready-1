@@ -284,6 +284,8 @@ export const banks: Bank[] = [
     color: '#122b67',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-slWugBPfzqph7WaqUU3hSoTfY0cto0.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-huG4ZRgsxos8PUs8MGLt8IVVaaRvrZ.png',
+    themeColor: '#4e5358',
   },
   {
     name: 'Emirates Islamic Bank P.J.S.C.',
