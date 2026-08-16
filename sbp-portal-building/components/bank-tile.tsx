@@ -14,12 +14,15 @@ export function BankTile({ bank }: { bank: Bank }) {
         style={bank.logoBackground ? { backgroundColor: bank.logoBackground } : undefined}
       >
         <div className="flex h-12 w-16 items-center justify-center">
+
           {showLogo ? (
             /* eslint-disable-next-line @next/next/no-img-element */
             <img
               src={bank.logo || '/placeholder.svg'}
               alt={`${bank.name} logo`}
-              className="max-h-full max-w-full object-contain"
+              className={`max-h-full max-w-full object-contain ${
+                bank.name === 'Emirates NBD Bank P.J.S.C' ? 'scale-125' : ''
+              }`}
               loading="lazy"
               onError={() => setFailed(true)}
             />
