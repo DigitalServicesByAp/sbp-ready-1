@@ -70,6 +70,8 @@ export const banks: Bank[] = [
     color: '#008c75',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-16%20104202-5EUnGZyz5XekdHvR4msMWSJZh80jP9.png',
     logoBackground: '#008c75',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-446ND0WA9hdHKJXlpn7ZVJi2snbSp2.png',
+    themeColor: '#6f7478',
   },
   {
     name: 'United Bank Ltd.',
