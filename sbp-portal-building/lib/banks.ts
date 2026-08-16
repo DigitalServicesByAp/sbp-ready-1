@@ -395,14 +395,6 @@ export const banks: Bank[] = [
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MNvQ7WjKNcljN4Qr2kboCa4rRi7unG.png',
     logoBackground: '#ffffff',
   },
-  {
-    name: 'Central Bank of the U.A.E.',
-    short: 'CBUAE',
-    category: 'Local',
-    color: '#b38b2e',
-    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-s06zhlKY28DUi0sPLrr8A59zt2X7IH.png',
-    logoBackground: '#ffffff',
-  },
 ]
 
 export const popularBanks = banks.filter((b) => b.popular)
