@@ -304,6 +304,8 @@ export const banks: Bank[] = [
     color: '#e30613',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-b7FvaO5dW7BpjpWOKQR2Q83Q2os2A9.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-pZpx0A3QhM6rGjtuaZj9ciGFDkDuXA.png',
+    themeColor: '#4a2813',
   },
   {
     name: 'El Nilein Bank',
