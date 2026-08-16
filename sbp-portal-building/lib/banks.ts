@@ -80,6 +80,8 @@ export const banks: Bank[] = [
     color: '#087eae',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-16%20104242-nGtkomUtjxZID6jGh9XU956tNQy62Z.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-05-01%20105044-n3GeurzuamPNn65RoL2OL9JR2tQOi1.png',
+    themeColor: '#073b86',
   },
   { name: 'First Abu Dhabi Bank P.J.S.C', short: 'FA', category: 'Local', color: '#0f4c8c', logo: '/logos/first-abu-dhabi-bank.png', logoBackground: '#ffffff' },
   {
