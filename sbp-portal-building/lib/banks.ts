@@ -590,6 +590,8 @@ export const banks: Bank[] = [
     color: '#0c6070',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MNvQ7WjKNcljN4Qr2kboCa4rRi7unG.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2hNe3EwGJ0IiORF3dHma6W4CBXIH4G.png',
+    themeColor: '#f0f1ec',
   },
 ]
 
