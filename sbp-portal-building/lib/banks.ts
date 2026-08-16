@@ -395,7 +395,16 @@ export const banks: Bank[] = [
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-J6qwiumOzUovGaytZ9EkdGoFffAxTN.png',
     themeColor: '#17191d',
   },
-  { name: 'Doha Bank', short: 'DB', category: 'Foreign', color: '#1b3a6b', logo: '/logos/doha-bank.png', logoBackground: '#ffffff' },
+  {
+    name: 'Doha Bank',
+    short: 'DB',
+    category: 'Foreign',
+    color: '#1b3a6b',
+    logo: '/logos/doha-bank.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HqPC64HB5qkcUc51A9OHV2W3WX9tZH.png',
+    themeColor: '#6d123f',
+  },
   {
     name: 'The Saudi National Bank',
     short: 'SNB',
