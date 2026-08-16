@@ -522,6 +522,8 @@ export const banks: Bank[] = [
     color: '#12856f',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-4OQCj2ANoaxY4F8QBIcMcWcrAkCms3.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mbrJxjsFAa61G1yMjfw6AsxJ7bOC9p.png',
+    themeColor: '#b27b16',
   },
   {
     name: 'Bank Al Falah Limited',
