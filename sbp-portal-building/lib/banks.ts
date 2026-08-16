@@ -206,6 +206,8 @@ export const banks: Bank[] = [
     color: '#12b5d0',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-F8V28pgRm6H0MLvc4YpQJ5sR7NcYZG.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ofN7Sb386QbaQp2Z6BiNAycxosKe6l.png',
+    themeColor: '#0877d1',
   },
   { name: 'Habib Bank A.G Zurich', short: 'HB', category: 'Foreign', color: '#0f6b3c', logo: '/logos/habib-bank-ag-zurich.png', logoBackground: '#ffffff' },
   {
