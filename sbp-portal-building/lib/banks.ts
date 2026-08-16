@@ -148,6 +148,8 @@ export const banks: Bank[] = [
     color: '#c9a227',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jLlY3IU8g2xUAj8g2Ve1LYHRxwYjlV.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-noopEeA9x7K6YaCaIIrRg6qPbcj2R9.png',
+    themeColor: '#a87516',
   },
   {
     name: 'Bank of Sharjah P.J.S.C',
