@@ -229,7 +229,16 @@ export const banks: Bank[] = [
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-tve7WH3otx39CAQRm5jaEnhPfp7mx1.png',
     themeColor: '#061f75',
   },
-  { name: 'Dubai Islamic Bank (DIB)', short: 'DI', category: 'Islamic', color: '#0e7a4a', logo: '/logos/dubai-islamic-bank.png', logoBackground: '#ffffff' },
+  {
+    name: 'Dubai Islamic Bank (DIB)',
+    short: 'DI',
+    category: 'Islamic',
+    color: '#0e7a4a',
+    logo: '/logos/dubai-islamic-bank.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-W4aCNqSl1uCu6aMjTjICmERYpA9xpI.png',
+    themeColor: '#a7adb3',
+  },
   {
     name: 'Sharjah Islamic Bank P.J.S.C.',
     short: 'SIB',
