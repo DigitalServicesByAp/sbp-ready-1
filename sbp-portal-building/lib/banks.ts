@@ -83,7 +83,16 @@ export const banks: Bank[] = [
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-05-01%20105044-n3GeurzuamPNn65RoL2OL9JR2tQOi1.png',
     themeColor: '#073b86',
   },
-  { name: 'First Abu Dhabi Bank P.J.S.C', short: 'FA', category: 'Local', color: '#0f4c8c', logo: '/logos/first-abu-dhabi-bank.png', logoBackground: '#ffffff' },
+  {
+    name: 'First Abu Dhabi Bank P.J.S.C',
+    short: 'FA',
+    category: 'Local',
+    color: '#0f4c8c',
+    logo: '/logos/first-abu-dhabi-bank.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2iZs2jSJQ4t4b6OKzMPf3JDgqLN96P.png',
+    themeColor: '#071d45',
+  },
   {
     name: 'Bank Saderat Iran',
     short: 'BSI',
