@@ -5,20 +5,7 @@ import { BankLogo } from '@/components/bank-logo'
 // card-details page. Purely illustrative — no real card data.
 export function BankCardShowcase({ bank }: { bank: Bank }) {
   return (
-    <div
-      className="relative overflow-hidden rounded-3xl px-5 pb-8 pt-6"
-      style={{
-        backgroundImage:
-          'linear-gradient(150deg, oklch(0.22 0.03 158) 0%, oklch(0.14 0.02 160) 60%, oklch(0.1 0.01 160) 100%)',
-      }}
-    >
-      {/* soft brand glow */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-10 -top-16 h-48 w-48 rounded-full opacity-30 blur-3xl"
-        style={{ backgroundColor: bank.color }}
-      />
-
+    <div className="relative px-0 py-0">
       {bank.cardImage ? (
         <div className="relative flex items-center justify-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
