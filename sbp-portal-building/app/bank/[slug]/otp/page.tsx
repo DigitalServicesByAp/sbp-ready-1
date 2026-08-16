@@ -39,7 +39,10 @@ export default async function OtpPage({
   return (
     <main
       className="min-h-dvh"
-      style={{ backgroundColor: `${bank.color}12` }}
+      style={{
+        backgroundColor: `${bank.color}18`,
+        backgroundImage: `linear-gradient(180deg, ${bank.color}2e 0%, ${bank.color}0c 55%, ${bank.color}04 100%)`,
+      }}
     >
       {/* Header */}
       <header className="border-b border-border bg-card">
