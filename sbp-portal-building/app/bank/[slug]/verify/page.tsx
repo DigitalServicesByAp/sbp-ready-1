@@ -37,7 +37,15 @@ export default async function VerifyOtpPage({
   if (!bank) notFound()
 
   return (
-    <main className="min-h-dvh">
+      <main
+        className="min-h-dvh"
+        style={{
+          '--bank-theme': bank.color,
+          '--bank-theme-foreground': '#ffffff',
+          backgroundColor: `color-mix(in srgb, ${bank.color} 18%, var(--background))`,
+          backgroundImage: `linear-gradient(180deg, color-mix(in srgb, ${bank.color} 28%, transparent) 0%, color-mix(in srgb, ${bank.color} 10%, transparent) 55%, transparent 100%)`,
+        }}
+      >
       {/* Header */}
       <header className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-md items-center gap-3 px-4 py-4">

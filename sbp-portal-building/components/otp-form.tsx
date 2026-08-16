@@ -129,7 +129,7 @@ export function OtpForm({
       </p>
 
       {/* OTP input card */}
-      <div className="mt-5 rounded-3xl border border-border bg-card p-5 shadow-sm">
+      <div className="mt-5 rounded-3xl border border-border bg-[color-mix(in_srgb,var(--bank-theme)_8%,var(--background))] p-5 shadow-sm">
         <div className="flex justify-center gap-2 sm:gap-3">
           {digits.map((digit, i) => (
             <input
@@ -146,7 +146,7 @@ export function OtpForm({
               onKeyDown={(e) => handleKeyDown(i, e)}
               onPaste={handlePaste}
               onFocus={(e) => e.target.select()}
-              className={`h-12 w-11 rounded-xl border bg-secondary/40 text-center text-xl font-bold text-foreground outline-none ring-2 ring-transparent transition focus:border-primary focus:ring-primary sm:h-14 sm:w-12 ${
+              className={`bank-themed-input h-12 w-11 rounded-xl border text-center text-xl font-bold text-foreground outline-none ring-2 ring-transparent transition sm:h-14 sm:w-12 ${
                 error ? 'border-destructive ring-destructive/40' : 'border-border'
               }`}
             />
@@ -212,7 +212,7 @@ export function OtpForm({
       <button
         type="submit"
         disabled={!isComplete}
-        className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-4 text-base font-bold text-primary-foreground shadow-md transition-all duration-100 hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.98] active:brightness-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:active:scale-100"
+        className="bank-themed-button flex w-full items-center justify-center gap-2 rounded-2xl py-4 text-base font-bold shadow-md transition-all duration-100 hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.98] active:brightness-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:active:scale-100"
       >
         Confirm OTP
         <ChevronRight className="h-5 w-5" aria-hidden="true" />

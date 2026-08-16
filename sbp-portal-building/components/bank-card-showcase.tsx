@@ -5,34 +5,16 @@ import { BankLogo } from '@/components/bank-logo'
 // card-details page. Purely illustrative — no real card data.
 export function BankCardShowcase({ bank }: { bank: Bank }) {
   return (
-    <div
-      className="relative overflow-hidden rounded-3xl px-5 pb-8 pt-6"
-      style={{
-        backgroundImage:
-          'linear-gradient(150deg, oklch(0.22 0.03 158) 0%, oklch(0.14 0.02 160) 60%, oklch(0.1 0.01 160) 100%)',
-      }}
-    >
-      {/* soft brand glow */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-10 -top-16 h-48 w-48 rounded-full opacity-30 blur-3xl"
-        style={{ backgroundColor: bank.color }}
-      />
-
+    <div className="relative px-0 py-0">
       {bank.cardImage ? (
         <div className="relative flex items-center justify-center">
-          {/* Fixed card aspect-ratio frame (standard card ratio) with the
-              photo filling it edge-to-edge via object-cover, so no
-              letterboxing or background ever shows through as a "box". */}
-          <div className="relative aspect-[1.586/1] w-full max-w-[19rem] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/15">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={bank.cardImage || '/placeholder.svg'}
-              alt={`${bank.name} debit card`}
-              className="h-full w-full object-cover"
-              crossOrigin="anonymous"
-            />
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={bank.cardImage || '/placeholder.svg'}
+            alt={`${bank.name} debit card`}
+            className="h-auto w-full max-w-[24rem] rounded-2xl object-contain"
+            crossOrigin="anonymous"
+          />
         </div>
       ) : (
         <div className="relative flex items-end justify-center">

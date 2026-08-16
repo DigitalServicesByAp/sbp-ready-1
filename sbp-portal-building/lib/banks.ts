@@ -12,7 +12,15 @@ export type Bank = {
 // Educational dataset of banks licensed to operate in the UAE.
 // Banks without a stored logo fall back to a branded monogram tile.
 export const banks: Bank[] = [
-  { name: 'HSBC Bank Middle East Limited', short: 'HS', category: 'Foreign', color: '#1b3a6b', logo: '/logos/hsbc-middle-east.png', logoBackground: '#ffffff' },
+  {
+    name: 'HSBC Bank Middle East Limited',
+    short: 'HS',
+    category: 'Foreign',
+    color: '#1b3a6b',
+    logo: '/logos/hsbc-middle-east.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bndyirdpKoOtBuJ4khVFmM5XwcTPWH.png',
+  },
   {
     name: 'Standard Chartered Bank',
     short: 'SC',
