@@ -532,6 +532,8 @@ export const banks: Bank[] = [
     color: '#d21f12',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-W1XF4hm9rGD8YAgrnVC3yEKWwjooFh.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CcnS5XmmdC7VGPb7Xnwh5PJKP5cCyL.png',
+    themeColor: '#8f1111',
   },
   {
     name: 'BOK International Bank',
