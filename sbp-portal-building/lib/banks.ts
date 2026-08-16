@@ -50,6 +50,8 @@ export const banks: Bank[] = [
     color: '#005baa',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IpGXkylcqTgDKBXcGWdhdvuQnrShhg.png',
     logoBackground: '#eef0f7',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-g8AOP3Q77L6A1tyPfKZATPeXcEYCOA.png',
+    themeColor: '#0066b3',
   },
   { name: 'Mashreq Bank P.S.C.', short: 'MQ', category: 'Local', color: '#ed3d1e', logo: '/logos/mashreq.png', logoBackground: '#ffffff' },
   {
