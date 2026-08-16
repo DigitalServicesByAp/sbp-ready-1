@@ -472,6 +472,8 @@ export const banks: Bank[] = [
     color: '#169bd5',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3MxzTNLgczGInR1WuoEDyhCyFwzgYv.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3N86GNY5rgGo1U72EDWDCxIso3MJkl.png',
+    themeColor: '#0878c9',
   },
   { name: 'Bank of China Limited', short: 'BC', category: 'Foreign', color: '#a71930', logo: '/logos/bank-of-china.png', logoBackground: '#ffffff' },
   {
