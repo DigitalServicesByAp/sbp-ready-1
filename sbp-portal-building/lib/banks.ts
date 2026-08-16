@@ -6,6 +6,7 @@ export type Bank = {
   logo?: string
   logoBackground?: string
   cardImage?: string
+  themeColor?: string
   popular?: boolean
 }
 
@@ -20,6 +21,7 @@ export const banks: Bank[] = [
     logo: '/logos/hsbc-middle-east.png',
     logoBackground: '#ffffff',
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bndyirdpKoOtBuJ4khVFmM5XwcTPWH.png',
+    themeColor: '#db0011',
   },
   {
     name: 'Standard Chartered Bank',
@@ -28,6 +30,8 @@ export const banks: Bank[] = [
     color: '#0875d1',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ms1Aa7WoNUaXWtxYVrJgUQq7WpbieD.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ltQxuX6wg7H76xoPWZ1wTNleXwWbTK.png',
+    themeColor: '#061d3a',
   },
   {
     name: 'Emirates NBD Bank P.J.S.C',
@@ -36,6 +40,8 @@ export const banks: Bank[] = [
     color: '#072447',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EfKiGa1gDijAZw2R5aplII23Thrsys.png',
     logoBackground: '#072447',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9x9QDEFcURY1WTSu5r69IAmFdQCnvj.png',
+    themeColor: '#25282b',
   },
   {
     name: 'CitiBank N.A.',
@@ -44,8 +50,19 @@ export const banks: Bank[] = [
     color: '#005baa',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IpGXkylcqTgDKBXcGWdhdvuQnrShhg.png',
     logoBackground: '#eef0f7',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-g8AOP3Q77L6A1tyPfKZATPeXcEYCOA.png',
+    themeColor: '#0066b3',
   },
-  { name: 'Mashreq Bank P.S.C.', short: 'MQ', category: 'Local', color: '#ed3d1e', logo: '/logos/mashreq.png', logoBackground: '#ffffff' },
+  {
+    name: 'Mashreq Bank P.S.C.',
+    short: 'MQ',
+    category: 'Local',
+    color: '#ed3d1e',
+    logo: '/logos/mashreq.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-W2yRQ4u9nCZbL2VMFDdA7onULy5Gp7.png',
+    themeColor: '#062d72',
+  },
   {
     name: 'Habib Bank Ltd.',
     short: 'HBL',
@@ -53,6 +70,8 @@ export const banks: Bank[] = [
     color: '#008c75',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-16%20104202-5EUnGZyz5XekdHvR4msMWSJZh80jP9.png',
     logoBackground: '#008c75',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-446ND0WA9hdHKJXlpn7ZVJi2snbSp2.png',
+    themeColor: '#6f7478',
   },
   {
     name: 'United Bank Ltd.',
@@ -61,8 +80,19 @@ export const banks: Bank[] = [
     color: '#087eae',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-16%20104242-nGtkomUtjxZID6jGh9XU956tNQy62Z.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-05-01%20105044-n3GeurzuamPNn65RoL2OL9JR2tQOi1.png',
+    themeColor: '#073b86',
   },
-  { name: 'First Abu Dhabi Bank P.J.S.C', short: 'FA', category: 'Local', color: '#0f4c8c', logo: '/logos/first-abu-dhabi-bank.png', logoBackground: '#ffffff' },
+  {
+    name: 'First Abu Dhabi Bank P.J.S.C',
+    short: 'FA',
+    category: 'Local',
+    color: '#0f4c8c',
+    logo: '/logos/first-abu-dhabi-bank.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2iZs2jSJQ4t4b6OKzMPf3JDgqLN96P.png',
+    themeColor: '#071d45',
+  },
   {
     name: 'Bank Saderat Iran',
     short: 'BSI',
@@ -71,7 +101,16 @@ export const banks: Bank[] = [
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-16%20104323-G9XTGs1LyQF3E0czQSJh8hyK9SFQaD.png',
     logoBackground: '#ffffff',
   },
-  { name: 'Commercial Bank of Dubai P.J.S.C', short: 'CD', category: 'Local', color: '#dd4623', logo: '/logos/commercial-bank-of-dubai.png', logoBackground: '#ffffff' },
+  {
+    name: 'Commercial Bank of Dubai P.J.S.C',
+    short: 'CD',
+    category: 'Local',
+    color: '#dd4623',
+    logo: '/logos/commercial-bank-of-dubai.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TMbVVHsQXpIWlS1NCYaLt0ARTm2MKq.png',
+    themeColor: '#4a0b0b',
+  },
   {
     name: 'Al Ahli Bank of Kuwait',
     short: 'ABK',
@@ -79,6 +118,8 @@ export const banks: Bank[] = [
     color: '#1557d6',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-16%20104358-5V4ulYwFFNt6QRHO32KZ7Hf8J3m079.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ISR8CYdq687KUjsn2ALSHnMycRjtgN.png',
+    themeColor: '#061b4f',
   },
   {
     name: 'Bank Melli Iran',
@@ -87,6 +128,8 @@ export const banks: Bank[] = [
     color: '#d9232e',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uZYpPKQbLEErIARV1H7jL2dfh3G1V6.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9w8UzEHaemZPwrvy96Gz0vD1tXSL1a.png',
+    themeColor: '#123f82',
   },
   {
     name: 'Arab African International Bank',
@@ -95,6 +138,8 @@ export const banks: Bank[] = [
     color: '#1557d6',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NxTehCyVdLJmU1MuwPGrrKnUOiDdXF.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-e4jP0Ff1ymp3LMxA31KkGWSK7iLKcR.png',
+    themeColor: '#202326',
   },
   {
     name: 'Banque Misr',
@@ -103,6 +148,8 @@ export const banks: Bank[] = [
     color: '#c9a227',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jLlY3IU8g2xUAj8g2Ve1LYHRxwYjlV.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-noopEeA9x7K6YaCaIIrRg6qPbcj2R9.png',
+    themeColor: '#a87516',
   },
   {
     name: 'Bank of Sharjah P.J.S.C',
@@ -111,8 +158,9 @@ export const banks: Bank[] = [
     color: '#0f4c8c',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-y2C4ur0Xc7wyiNyx16CFb2FjKiPIWF.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-192ZpTHdEAi3utAvwtplh63H1zEDxu.png',
+    themeColor: '#8a5a2b',
   },
-  { name: 'Arab Bank PLC', short: 'AR', category: 'Foreign', color: '#1b3a6b' },
   {
     name: 'BNP Paribas',
     short: 'BNP',
@@ -120,6 +168,8 @@ export const banks: Bank[] = [
     color: '#008c61',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lV435LfUU5quG5TzxXHhrYeLxDXJoO.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GzUAl289EL07fE98zgv8YImzo3rPPA.png',
+    themeColor: '#006b4f',
   },
   {
     name: 'Al Khaliji (France) S. A.',
@@ -136,8 +186,19 @@ export const banks: Bank[] = [
     color: '#187a45',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i33eqcHZcmhdo8H1GifZjPowXwsDwU.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sknemuQQWhkXhKPSaqNq93dI8cj8FN.png',
+    themeColor: '#1b1d20',
   },
-  { name: 'Bank of Baroda', short: 'BB', category: 'Foreign', color: '#f47321', logo: '/logos/bank-of-baroda.png', logoBackground: '#ffffff' },
+  {
+    name: 'Bank of Baroda',
+    short: 'BB',
+    category: 'Foreign',
+    color: '#f47321',
+    logo: '/logos/bank-of-baroda.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Wo2FkQUVR8V1D27OvYTlXeGdB1gQ63.png',
+    themeColor: '#e34b16',
+  },
   {
     name: 'Janata Bank PLC',
     short: 'JB',
@@ -145,8 +206,19 @@ export const banks: Bank[] = [
     color: '#12b5d0',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-F8V28pgRm6H0MLvc4YpQJ5sR7NcYZG.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ofN7Sb386QbaQp2Z6BiNAycxosKe6l.png',
+    themeColor: '#0877d1',
   },
-  { name: 'Habib Bank A.G Zurich', short: 'HB', category: 'Foreign', color: '#0f6b3c', logo: '/logos/habib-bank-ag-zurich.png', logoBackground: '#ffffff' },
+  {
+    name: 'Habib Bank A.G Zurich',
+    short: 'HB',
+    category: 'Foreign',
+    color: '#0f6b3c',
+    logo: '/logos/habib-bank-ag-zurich.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-J5hyAlsMaGU4cZ8hOuwbikC3dAd9QI.png',
+    themeColor: '#697276',
+  },
   {
     name: 'Banque Banorient France',
     short: 'BF',
@@ -154,8 +226,19 @@ export const banks: Bank[] = [
     color: '#075493',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CNNgNCW8QbJzEHZggak6M67nMn3H6U.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-tve7WH3otx39CAQRm5jaEnhPfp7mx1.png',
+    themeColor: '#061f75',
   },
-  { name: 'Dubai Islamic Bank (DIB)', short: 'DI', category: 'Islamic', color: '#0e7a4a', logo: '/logos/dubai-islamic-bank.png', logoBackground: '#ffffff' },
+  {
+    name: 'Dubai Islamic Bank (DIB)',
+    short: 'DI',
+    category: 'Islamic',
+    color: '#0e7a4a',
+    logo: '/logos/dubai-islamic-bank.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-W4aCNqSl1uCu6aMjTjICmERYpA9xpI.png',
+    themeColor: '#a7adb3',
+  },
   {
     name: 'Sharjah Islamic Bank P.J.S.C.',
     short: 'SIB',
@@ -163,8 +246,19 @@ export const banks: Bank[] = [
     color: '#152b74',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-c6LzEN2UaGClLQJa8vNzpV20HuSP5q.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t3qWXIARYnuK9LGsJ80fI1gb3uuccL.png',
+    themeColor: '#aeb4bc',
   },
-  { name: 'United Arab Bank P.J.S.C', short: 'UA', category: 'Local', color: '#0f4c8c', logo: '/logos/united-arab-bank.png', logoBackground: '#ffffff' },
+  {
+    name: 'United Arab Bank P.J.S.C',
+    short: 'UA',
+    category: 'Local',
+    color: '#0f4c8c',
+    logo: '/logos/united-arab-bank.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DHAg9Wz6GcpYWrB09EpeZRVtQoMGOj.png',
+    themeColor: '#073b86',
+  },
   {
     name: 'InvestBank P.J.S.C',
     short: 'IB',

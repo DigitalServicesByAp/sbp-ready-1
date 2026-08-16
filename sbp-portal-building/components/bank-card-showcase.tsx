@@ -34,7 +34,7 @@ export function BankCardShowcase({ bank }: { bank: Bank }) {
           <div
             className="relative z-10 w-full max-w-[19rem] rounded-2xl p-5 text-white shadow-2xl ring-1 ring-white/15"
             style={{
-              backgroundImage: `linear-gradient(135deg, ${bank.color} 0%, color-mix(in srgb, ${bank.color} 55%, #111827) 120%)`,
+              backgroundImage: `linear-gradient(135deg, ${bank.themeColor ?? bank.color} 0%, color-mix(in srgb, ${bank.themeColor ?? bank.color} 55%, #111827) 120%)`,
             }}
           >
             <div className="flex items-start justify-between">
