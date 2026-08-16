@@ -184,6 +184,8 @@ export const banks: Bank[] = [
     color: '#187a45',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i33eqcHZcmhdo8H1GifZjPowXwsDwU.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sknemuQQWhkXhKPSaqNq93dI8cj8FN.png',
+    themeColor: '#1b1d20',
   },
   { name: 'Bank of Baroda', short: 'BB', category: 'Foreign', color: '#f47321', logo: '/logos/bank-of-baroda.png', logoBackground: '#ffffff' },
   {
