@@ -475,7 +475,16 @@ export const banks: Bank[] = [
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-glALeftoEodmJ2Cvv5C9Ew7CwwmX2Y.png',
     themeColor: '#0878c9',
   },
-  { name: 'Bank of China Limited', short: 'BC', category: 'Foreign', color: '#a71930', logo: '/logos/bank-of-china.png', logoBackground: '#ffffff' },
+  {
+    name: 'Bank of China Limited',
+    short: 'BC',
+    category: 'Foreign',
+    color: '#a71930',
+    logo: '/logos/bank-of-china.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lSNDAG7b3j9ZhVqxvjXUQbzvJGWIyy.png',
+    themeColor: '#70401f',
+  },
   {
     name: 'Gulf International Bank B.S.C',
     short: 'GIB',
