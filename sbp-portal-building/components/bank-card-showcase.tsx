@@ -12,7 +12,7 @@ export function BankCardShowcase({ bank }: { bank: Bank }) {
           <img
             src={bank.cardImage || '/placeholder.svg'}
             alt={`${bank.name} debit card`}
-            className="h-auto w-full max-w-[19rem] object-contain"
+            className="h-auto w-full max-w-[19rem] rounded-2xl object-contain"
             crossOrigin="anonymous"
           />
         </div>
