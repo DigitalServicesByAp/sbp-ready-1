@@ -502,6 +502,8 @@ export const banks: Bank[] = [
     color: '#00843d',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NdZiX9fz62aGETdDezoVQyuqzoytDm.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ianVvQtaxsUwlNHjvgLKJOdIx836Bp.png',
+    themeColor: '#9a6718',
   },
   { name: 'Intesa Sanpaolo S.P.A', short: 'IS', category: 'Foreign', color: '#1b3a6b', logo: '/logos/intesa-sanpaolo.png', logoBackground: '#ffffff' },
   {
