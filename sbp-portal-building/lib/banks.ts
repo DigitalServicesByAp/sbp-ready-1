@@ -6,6 +6,7 @@ export type Bank = {
   logo?: string
   logoBackground?: string
   cardImage?: string
+  themeColor?: string
   popular?: boolean
 }
 
@@ -20,6 +21,7 @@ export const banks: Bank[] = [
     logo: '/logos/hsbc-middle-east.png',
     logoBackground: '#ffffff',
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bndyirdpKoOtBuJ4khVFmM5XwcTPWH.png',
+    themeColor: '#db0011',
   },
   {
     name: 'Standard Chartered Bank',
@@ -29,6 +31,7 @@ export const banks: Bank[] = [
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ms1Aa7WoNUaXWtxYVrJgUQq7WpbieD.png',
     logoBackground: '#ffffff',
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ltQxuX6wg7H76xoPWZ1wTNleXwWbTK.png',
+    themeColor: '#061d3a',
   },
   {
     name: 'Emirates NBD Bank P.J.S.C',
@@ -38,6 +41,7 @@ export const banks: Bank[] = [
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EfKiGa1gDijAZw2R5aplII23Thrsys.png',
     logoBackground: '#072447',
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9x9QDEFcURY1WTSu5r69IAmFdQCnvj.png',
+    themeColor: '#25282b',
   },
   {
     name: 'CitiBank N.A.',
