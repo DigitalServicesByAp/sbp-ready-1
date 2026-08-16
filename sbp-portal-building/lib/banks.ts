@@ -371,7 +371,14 @@ export const banks: Bank[] = [
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-15%20224710-XOxRblCpr6ToWGlPZtpMBJ19b7RJoY.png',
     logoBackground: '#f1f0ed',
   },
-  { name: 'Zand Bank P.J.S.C', short: 'ZB', category: 'Digital', color: '#4a16df' },
+  {
+    name: 'Zand Bank P.J.S.C',
+    short: 'ZAND',
+    category: 'Digital',
+    color: '#9a5a3a',
+    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-15%20224748-JvpQHRUWYi0mfVa0pZxwz7iKT5lz6h.png',
+    logoBackground: '#ffffff',
+  },
   { name: 'International Development Bank for Investment & Finance', short: 'ID', category: 'Foreign', color: '#1b3a6b' },
   { name: 'Ruya Community Islamic Bank L.L.C', short: 'RU', category: 'Islamic', color: '#0e7a4a' },
 ]
