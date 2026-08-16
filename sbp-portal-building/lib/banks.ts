@@ -53,7 +53,16 @@ export const banks: Bank[] = [
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-g8AOP3Q77L6A1tyPfKZATPeXcEYCOA.png',
     themeColor: '#0066b3',
   },
-  { name: 'Mashreq Bank P.S.C.', short: 'MQ', category: 'Local', color: '#ed3d1e', logo: '/logos/mashreq.png', logoBackground: '#ffffff' },
+  {
+    name: 'Mashreq Bank P.S.C.',
+    short: 'MQ',
+    category: 'Local',
+    color: '#ed3d1e',
+    logo: '/logos/mashreq.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-W2yRQ4u9nCZbL2VMFDdA7onULy5Gp7.png',
+    themeColor: '#062d72',
+  },
   {
     name: 'Habib Bank Ltd.',
     short: 'HBL',
