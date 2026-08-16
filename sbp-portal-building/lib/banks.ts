@@ -580,6 +580,8 @@ export const banks: Bank[] = [
     color: '#d71920',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7lV188MJ9kbGHN41qyewf1byT6iz1c.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-saeLOn904z81qNTR3oaFTRb7HVFcZ1.png',
+    themeColor: '#9da1a5',
   },
   {
     name: 'Ruya Community Islamic Bank L.L.C',
