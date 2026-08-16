@@ -142,7 +142,6 @@ export const banks: Bank[] = [
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-y2C4ur0Xc7wyiNyx16CFb2FjKiPIWF.png',
     logoBackground: '#ffffff',
   },
-  { name: 'Arab Bank PLC', short: 'AR', category: 'Foreign', color: '#1b3a6b' },
   {
     name: 'BNP Paribas',
     short: 'BNP',
