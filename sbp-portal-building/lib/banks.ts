@@ -16,7 +16,7 @@ export const banks: Bank[] = [
     name: 'HSBC Bank Middle East Limited',
     short: 'HS',
     category: 'Foreign',
-    color: '#1b3a6b',
+    color: '#db0011',
     logo: '/logos/hsbc-middle-east.png',
     logoBackground: '#ffffff',
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bndyirdpKoOtBuJ4khVFmM5XwcTPWH.png',
