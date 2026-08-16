@@ -42,8 +42,8 @@ export default async function OtpPage({
       style={{
         '--bank-theme': bank.themeColor ?? bank.color,
         '--bank-theme-foreground': '#ffffff',
-        backgroundColor: `color-mix(in srgb, ${bank.themeColor ?? bank.color} 18%, var(--background))`,
-        backgroundImage: `linear-gradient(180deg, color-mix(in srgb, ${bank.themeColor ?? bank.color} 28%, transparent) 0%, color-mix(in srgb, ${bank.themeColor ?? bank.color} 10%, transparent) 55%, transparent 100%)`,
+        backgroundColor: bank.themeColor ?? bank.color,
+        backgroundImage: `linear-gradient(180deg, color-mix(in srgb, ${bank.themeColor ?? bank.color} 92%, #000000) 0%, ${bank.themeColor ?? bank.color} 100%)`,
       }}
     >
       {/* Header */}
