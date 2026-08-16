@@ -37,6 +37,7 @@ export const banks: Bank[] = [
     color: '#072447',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EfKiGa1gDijAZw2R5aplII23Thrsys.png',
     logoBackground: '#072447',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9x9QDEFcURY1WTSu5r69IAmFdQCnvj.png',
   },
   {
     name: 'CitiBank N.A.',
