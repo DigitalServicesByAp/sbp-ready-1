@@ -101,7 +101,16 @@ export const banks: Bank[] = [
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-16%20104323-G9XTGs1LyQF3E0czQSJh8hyK9SFQaD.png',
     logoBackground: '#ffffff',
   },
-  { name: 'Commercial Bank of Dubai P.J.S.C', short: 'CD', category: 'Local', color: '#dd4623', logo: '/logos/commercial-bank-of-dubai.png', logoBackground: '#ffffff' },
+  {
+    name: 'Commercial Bank of Dubai P.J.S.C',
+    short: 'CD',
+    category: 'Local',
+    color: '#dd4623',
+    logo: '/logos/commercial-bank-of-dubai.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TMbVVHsQXpIWlS1NCYaLt0ARTm2MKq.png',
+    themeColor: '#4a0b0b',
+  },
   {
     name: 'Al Ahli Bank of Kuwait',
     short: 'ABK',
