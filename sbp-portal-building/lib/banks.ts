@@ -28,6 +28,7 @@ export const banks: Bank[] = [
     color: '#0875d1',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ms1Aa7WoNUaXWtxYVrJgUQq7WpbieD.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MDPk4uv9lDh07kRG4nmZQ2X1taM4Hm.png',
   },
   {
     name: 'Emirates NBD Bank P.J.S.C',
