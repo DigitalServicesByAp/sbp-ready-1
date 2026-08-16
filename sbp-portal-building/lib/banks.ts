@@ -306,14 +306,6 @@ export const banks: Bank[] = [
     logoBackground: '#ffffff',
   },
   {
-    name: 'Emirates Investment Bank (PJSC)',
-    short: 'EIB',
-    category: 'Foreign',
-    color: '#b20d45',
-    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Vukjg87zF1RO4UI5SIfsgNvQ26JLQB.png',
-    logoBackground: '#ffffff',
-  },
-  {
     name: 'El Nilein Bank',
     short: 'EN',
     category: 'Foreign',
