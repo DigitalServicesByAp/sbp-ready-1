@@ -492,6 +492,8 @@ export const banks: Bank[] = [
     color: '#173bba',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-cZHzA0LSvaPJhnl8cjAbDpq4k55pWY.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Pa6s5taO0rGxFwImlhW0gxigGUx0Er.png',
+    themeColor: '#5122b8',
   },
   {
     name: 'MCB Bank Limited',
