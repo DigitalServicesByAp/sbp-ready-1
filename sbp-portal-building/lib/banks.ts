@@ -387,7 +387,14 @@ export const banks: Bank[] = [
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7lV188MJ9kbGHN41qyewf1byT6iz1c.png',
     logoBackground: '#ffffff',
   },
-  { name: 'Ruya Community Islamic Bank L.L.C', short: 'RU', category: 'Islamic', color: '#0e7a4a' },
+  {
+    name: 'Ruya Community Islamic Bank L.L.C',
+    short: 'RUYA',
+    category: 'Islamic',
+    color: '#0c6070',
+    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MNvQ7WjKNcljN4Qr2kboCa4rRi7unG.png',
+    logoBackground: '#ffffff',
+  },
 ]
 
 export const popularBanks = banks.filter((b) => b.popular)
