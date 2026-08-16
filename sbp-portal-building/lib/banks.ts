@@ -330,6 +330,8 @@ export const banks: Bank[] = [
     color: '#0068a9',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qAKow8DIhbVsGfPwBbbNi62os1MKg7.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q3VNkXmLADgg2KnTKlGc1Qa5icwlGK.png',
+    themeColor: '#a97816',
   },
   { name: 'National Bank of Bahrain', short: 'NA', category: 'Local', color: '#0f4c8c', logo: '/logos/national-bank-of-bahrain.png', logoBackground: '#ffffff' },
   { name: 'National Bank of Fujairah PSC', short: 'NF', category: 'Local', color: '#0f4c8c', logo: '/logos/nbf.png', logoBackground: '#ffffff' },
