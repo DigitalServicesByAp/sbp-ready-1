@@ -237,6 +237,8 @@ export const banks: Bank[] = [
     color: '#152b74',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-c6LzEN2UaGClLQJa8vNzpV20HuSP5q.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t3qWXIARYnuK9LGsJ80fI1gb3uuccL.png',
+    themeColor: '#aeb4bc',
   },
   { name: 'United Arab Bank P.J.S.C', short: 'UA', category: 'Local', color: '#0f4c8c', logo: '/logos/united-arab-bank.png', logoBackground: '#ffffff' },
   {
