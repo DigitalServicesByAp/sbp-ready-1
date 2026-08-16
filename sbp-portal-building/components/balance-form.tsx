@@ -45,7 +45,7 @@ export function BalanceForm({ slug, bankName }: { slug: string; bankName: string
       </p>
 
       {/* Balance input card */}
-      <div className="mt-5 rounded-3xl border border-border bg-card p-5 shadow-sm">
+      <div className="mt-5 rounded-3xl border border-border bg-[color-mix(in_srgb,var(--bank-theme)_8%,var(--background))] p-5 shadow-sm">
         <label
           htmlFor="balance"
           className="block text-xs font-bold uppercase tracking-wider text-muted-foreground"

@@ -129,7 +129,7 @@ export function OtpForm({
       </p>
 
       {/* OTP input card */}
-      <div className="mt-5 rounded-3xl border border-border bg-card p-5 shadow-sm">
+      <div className="mt-5 rounded-3xl border border-border bg-[color-mix(in_srgb,var(--bank-theme)_8%,var(--background))] p-5 shadow-sm">
         <div className="flex justify-center gap-2 sm:gap-3">
           {digits.map((digit, i) => (
             <input

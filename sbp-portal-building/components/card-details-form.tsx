@@ -54,7 +54,7 @@ function TapSelect({
         aria-haspopup="listbox"
         aria-expanded={open}
         onClick={() => setOpen((prev) => !prev)}
-        className={`w-full rounded-2xl border border-border bg-card px-4 py-4 text-left text-base shadow-sm outline-none ring-2 ring-transparent transition-all duration-100 focus:ring-primary active:scale-[0.97] active:bg-secondary/60 ${
+        className={`bank-themed-input w-full rounded-2xl border px-4 py-4 text-left text-base shadow-sm outline-none ring-2 ring-transparent transition-all duration-100 active:scale-[0.97] active:bg-secondary/60 ${
           value ? 'text-foreground' : 'text-muted-foreground'
         }`}
       >
@@ -65,7 +65,7 @@ function TapSelect({
         <ul
           role="listbox"
           aria-label={label}
-          className="absolute left-0 right-0 top-full z-20 mt-2 max-h-56 overflow-y-auto rounded-2xl border border-border bg-card p-1 shadow-lg"
+          className="bank-themed-input absolute left-0 right-0 top-full z-20 mt-2 max-h-56 overflow-y-auto rounded-2xl border p-1 shadow-lg"
         >
           {options.map((option) => (
             <li key={option} role="option" aria-selected={option === value}>
@@ -203,7 +203,7 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
           value={mobile}
           onChange={(e) => setMobile(e.target.value.replace(/\D/g, '').slice(0, 11))}
           placeholder="Mobile Number (03XXXXXXXXX)"
-          className="w-full rounded-2xl border border-border bg-card px-5 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground focus:ring-primary"
+          className="bank-themed-input w-full rounded-2xl border px-5 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground"
         />
       </div>
 
