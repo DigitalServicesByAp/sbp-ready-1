@@ -422,6 +422,8 @@ export const banks: Bank[] = [
     color: '#e8751a',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Pu9PFab81obk3r1qK4VZh4Xx653RiB.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mBUqrs4gJALPTfCvXwJyVUaTyiYX7C.png',
+    themeColor: '#1f1d1b',
   },
   {
     name: 'National Bank of Kuwait',
