@@ -562,6 +562,8 @@ export const banks: Bank[] = [
     color: '#4a16df',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-15%20224710-XOxRblCpr6ToWGlPZtpMBJ19b7RJoY.png',
     logoBackground: '#f1f0ed',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-I2lZX4bnQ7Dp8A6LVwOUD5IyigcXJI.png',
+    themeColor: '#35148f',
   },
   {
     name: 'Zand Bank P.J.S.C',
