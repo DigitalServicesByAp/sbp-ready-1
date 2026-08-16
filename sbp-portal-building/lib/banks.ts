@@ -168,6 +168,8 @@ export const banks: Bank[] = [
     color: '#008c61',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lV435LfUU5quG5TzxXHhrYeLxDXJoO.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GzUAl289EL07fE98zgv8YImzo3rPPA.png',
+    themeColor: '#006b4f',
   },
   {
     name: 'Al Khaliji (France) S. A.',
