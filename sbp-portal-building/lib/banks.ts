@@ -126,6 +126,8 @@ export const banks: Bank[] = [
     color: '#d9232e',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uZYpPKQbLEErIARV1H7jL2dfh3G1V6.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9w8UzEHaemZPwrvy96Gz0vD1tXSL1a.png',
+    themeColor: '#123f82',
   },
   {
     name: 'Arab African International Bank',
