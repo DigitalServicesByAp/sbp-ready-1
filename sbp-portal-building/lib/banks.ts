@@ -545,7 +545,16 @@ export const banks: Bank[] = [
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NF50aj4lMNelUOly87DtoiEEjHao6f.png',
     themeColor: '#765b3d',
   },
-  { name: 'Al Maryah Community Bank L.L.C.', short: 'AM', category: 'Local', color: '#0f4c8c', logo: '/logos/al-maryah-community-bank.png', logoBackground: '#ffffff' },
+  {
+    name: 'Al Maryah Community Bank L.L.C.',
+    short: 'AM',
+    category: 'Local',
+    color: '#0f4c8c',
+    logo: '/logos/al-maryah-community-bank.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RPkBNwrcvXrG9UwL7n8cwLrEt3wcgq.png',
+    themeColor: '#eef2f1',
+  },
   {
     name: 'WIO Bank P.J.S.C',
     short: 'WIO',
