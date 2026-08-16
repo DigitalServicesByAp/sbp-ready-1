@@ -209,7 +209,16 @@ export const banks: Bank[] = [
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ofN7Sb386QbaQp2Z6BiNAycxosKe6l.png',
     themeColor: '#0877d1',
   },
-  { name: 'Habib Bank A.G Zurich', short: 'HB', category: 'Foreign', color: '#0f6b3c', logo: '/logos/habib-bank-ag-zurich.png', logoBackground: '#ffffff' },
+  {
+    name: 'Habib Bank A.G Zurich',
+    short: 'HB',
+    category: 'Foreign',
+    color: '#0f6b3c',
+    logo: '/logos/habib-bank-ag-zurich.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-J5hyAlsMaGU4cZ8hOuwbikC3dAd9QI.png',
+    themeColor: '#697276',
+  },
   {
     name: 'Banque Banorient France',
     short: 'BF',
