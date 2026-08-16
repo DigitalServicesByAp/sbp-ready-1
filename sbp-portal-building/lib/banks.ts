@@ -362,6 +362,8 @@ export const banks: Bank[] = [
     color: '#bc2026',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MSpReG6kEm14hNeBDNwFuXJyYjzXQL.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yDzInnywVX59tY4kdTWPISGeXqhA0a.png',
+    themeColor: '#b5161b',
   },
   {
     name: 'Commercial Bank International P.J.S.C',
