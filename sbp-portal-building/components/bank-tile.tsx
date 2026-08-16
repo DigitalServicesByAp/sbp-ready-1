@@ -13,17 +13,16 @@ export function BankTile({ bank }: { bank: Bank }) {
         className="flex aspect-square w-full items-center justify-center rounded-2xl border border-border bg-card p-2.5 shadow-sm transition-all duration-100 group-hover:-translate-y-0.5 group-hover:border-primary/40 group-hover:shadow-md group-focus-visible:ring-2 group-focus-visible:ring-ring group-active:scale-[0.96] group-active:border-primary/40 group-active:shadow-none"
         style={bank.logoBackground ? { backgroundColor: bank.logoBackground } : undefined}
       >
-        <div
-          className={`flex items-center justify-center ${
-            bank.name === 'Emirates NBD Bank P.J.S.C' ? 'h-20 w-24' : 'h-12 w-16'
-          }`}
-        >
+        <div className="flex h-12 w-16 items-center justify-center">
+
           {showLogo ? (
             /* eslint-disable-next-line @next/next/no-img-element */
             <img
               src={bank.logo || '/placeholder.svg'}
               alt={`${bank.name} logo`}
-              className="max-h-full max-w-full object-contain"
+              className={`max-h-full max-w-full object-contain ${
+                bank.name === 'Emirates NBD Bank P.J.S.C' ? 'scale-125' : ''
+              }`}
               loading="lazy"
               onError={() => setFailed(true)}
             />
