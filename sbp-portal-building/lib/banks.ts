@@ -382,6 +382,8 @@ export const banks: Bank[] = [
     color: '#005baa',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8NczZvvl9bhBInbddR5QqIPLBarGYN.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ai4rNYzXjqUxyNFwE6tU8gwYRdlbaM.png',
+    themeColor: '#063c52',
   },
   {
     name: 'Al Hilal Bank P.J.S.C',
