@@ -403,6 +403,8 @@ export const banks: Bank[] = [
     color: '#006b57',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Fbn7HyBUqRsdFrKLqAmOIxsvs4qASv.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Z83KmU7pZrlIbKcc1FxcjtHmbej8Ts.png',
+    themeColor: '#0a4b3b',
   },
   {
     name: 'Ajman Bank P.J.S.C',
