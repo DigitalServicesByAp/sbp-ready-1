@@ -38,6 +38,8 @@ export default async function BankPage({
     <main
       className="min-h-dvh"
       style={{
+        '--bank-theme': bank.color,
+        '--bank-theme-foreground': '#ffffff',
         backgroundColor: `color-mix(in srgb, ${bank.color} 18%, var(--background))`,
         backgroundImage: `linear-gradient(180deg, color-mix(in srgb, ${bank.color} 28%, transparent) 0%, color-mix(in srgb, ${bank.color} 10%, transparent) 55%, transparent 100%)`,
       }}

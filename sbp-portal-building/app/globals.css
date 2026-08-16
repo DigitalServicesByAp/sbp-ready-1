@@ -183,6 +183,22 @@
   }
 }
 
+.bank-themed-input {
+  background-color: color-mix(in srgb, var(--bank-theme) 10%, var(--card));
+  border-color: color-mix(in srgb, var(--bank-theme) 28%, var(--border));
+}
+
+.bank-themed-input:focus,
+.bank-themed-input:focus-within {
+  border-color: var(--bank-theme);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--bank-theme) 22%, transparent);
+}
+
+.bank-themed-button {
+  background-color: var(--bank-theme);
+  color: var(--bank-theme-foreground, #ffffff);
+}
+
 /* Continuous right-scrolling marquee for the Top 10 Banks rail.
    Translates exactly one copy width (50%) so the duplicated track loops seamlessly. */
 @keyframes marquee-right {
