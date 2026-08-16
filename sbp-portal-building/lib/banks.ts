@@ -226,6 +226,8 @@ export const banks: Bank[] = [
     color: '#075493',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CNNgNCW8QbJzEHZggak6M67nMn3H6U.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-tve7WH3otx39CAQRm5jaEnhPfp7mx1.png',
+    themeColor: '#061f75',
   },
   { name: 'Dubai Islamic Bank (DIB)', short: 'DI', category: 'Islamic', color: '#0e7a4a', logo: '/logos/dubai-islamic-bank.png', logoBackground: '#ffffff' },
   {
