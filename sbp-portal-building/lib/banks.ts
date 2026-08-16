@@ -432,6 +432,8 @@ export const banks: Bank[] = [
     color: '#004b93',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-16%20103308-S5cDFUJhvdxQNVmeJ8wyDLssUrvl1o.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IyqS6smuOEO8VniuhR9HOlKY8TTm5b.png',
+    themeColor: '#174b87',
   },
   {
     name: 'Industrial & Commercial Bank of China',
