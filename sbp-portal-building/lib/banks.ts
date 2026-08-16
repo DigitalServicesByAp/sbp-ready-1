@@ -158,6 +158,8 @@ export const banks: Bank[] = [
     color: '#0f4c8c',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-y2C4ur0Xc7wyiNyx16CFb2FjKiPIWF.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-192ZpTHdEAi3utAvwtplh63H1zEDxu.png',
+    themeColor: '#8a5a2b',
   },
   {
     name: 'BNP Paribas',
