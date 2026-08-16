@@ -462,6 +462,8 @@ export const banks: Bank[] = [
     color: '#009b93',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DQXhmZS9DZaCLEs2gvfjyjl9P93Qws.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-KQJtd1bsnWMRecLO1jp4YbjEs67Zsd.png',
+    themeColor: '#79bcb9',
   },
   {
     name: 'Barclays Bank PLC',
