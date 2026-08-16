@@ -379,7 +379,14 @@ export const banks: Bank[] = [
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-15%20224748-JvpQHRUWYi0mfVa0pZxwz7iKT5lz6h.png',
     logoBackground: '#ffffff',
   },
-  { name: 'International Development Bank for Investment & Finance', short: 'ID', category: 'Foreign', color: '#1b3a6b' },
+  {
+    name: 'International Development Bank for Investment & Finance',
+    short: 'IDB',
+    category: 'Foreign',
+    color: '#d71920',
+    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7lV188MJ9kbGHN41qyewf1byT6iz1c.png',
+    logoBackground: '#ffffff',
+  },
   { name: 'Ruya Community Islamic Bank L.L.C', short: 'RU', category: 'Islamic', color: '#0e7a4a' },
 ]
 
