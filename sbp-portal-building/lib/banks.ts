@@ -138,6 +138,8 @@ export const banks: Bank[] = [
     color: '#1557d6',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NxTehCyVdLJmU1MuwPGrrKnUOiDdXF.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-e4jP0Ff1ymp3LMxA31KkGWSK7iLKcR.png',
+    themeColor: '#202326',
   },
   {
     name: 'Banque Misr',
