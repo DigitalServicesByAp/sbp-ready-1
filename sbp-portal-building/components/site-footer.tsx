@@ -38,7 +38,7 @@ export function SiteFooter() {
             <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-primary-foreground/20">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/logos/cbuae.png"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-s06zhlKY28DUi0sPLrr8A59zt2X7IH.png"
                 alt="Central Bank of the U.A.E. logo"
                 className="h-full w-full object-contain p-0.5"
               />
