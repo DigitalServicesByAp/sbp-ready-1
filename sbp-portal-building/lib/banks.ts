@@ -442,6 +442,8 @@ export const banks: Bank[] = [
     color: '#c8102e',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-rTQkSKJGOfvp6rwMTfbCp0dvCNulyf.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Fe3dlXOsLn4d6IQ21UVznfzwrQ5Oec.png',
+    themeColor: '#0b2d58',
   },
   {
     name: 'Deutsche Bank AG',
