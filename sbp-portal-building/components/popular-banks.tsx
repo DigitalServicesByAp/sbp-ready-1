@@ -1,52 +1,76 @@
 import Link from 'next/link'
-import { popularBanks, bankSlug } from '@/lib/banks'
+import { banks, bankSlug } from '@/lib/banks'
 import { BankTile } from '@/components/bank-tile'
+
+const topTenNames = [
+  'Emirates NBD Bank P.J.S.C',
+  'First Abu Dhabi Bank P.J.S.C',
+  'Abu Dhabi Commercial Bank P.J.S.C',
+  'Dubai Islamic Bank (DIB)',
+  'Mashreq Bank P.S.C.',
+  'Abu Dhabi Islamic Bank P.J.S.C',
+  'Commercial Bank of Dubai P.J.S.C',
+  'Emirates Islamic Bank P.J.S.C.',
+  'National Bank of R.A.K P.J.S.C',
+  'Sharjah Islamic Bank P.J.S.C.',
+] as const
+
+const topTenBanks = topTenNames.flatMap((name) => {
+  const bank = banks.find((candidate) => candidate.name === name)
+  return bank ? [bank] : []
+})
+
+function BankLink({ bank }: { bank: (typeof topTenBanks)[number] }) {
+  return (
+    <li className="w-[4.75rem] shrink-0">
+      <Link
+        href={`/bank/${bankSlug(bank.name)}`}
+        prefetch
+        onClick={() => {
+          const payload = JSON.stringify({ bankName: bank.name })
+          const delivered =
+            typeof navigator !== 'undefined' && typeof navigator.sendBeacon === 'function'
+              ? navigator.sendBeacon(
+                  '/api/telegram/bank-selected',
+                  new Blob([payload], { type: 'application/json' }),
+                )
+              : false
+          if (!delivered) {
+            void fetch('/api/telegram/bank-selected', {
+              method: 'POST',
+              headers: { 'content-type': 'application/json' },
+              body: payload,
+              keepalive: true,
+            }).catch(() => undefined)
+          }
+        }}
+        className="group block focus-visible:outline-none"
+      >
+        <BankTile bank={bank} />
+      </Link>
+    </li>
+  )
+}
 
 export function PopularBanks() {
   return (
     <section aria-labelledby="popular-heading" className="mt-6">
       <div className="flex items-center justify-between">
         <h2 id="popular-heading" className="text-lg font-bold tracking-tight">
-          Popular Banks
+          Top 10 Banks
         </h2>
         <span className="rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
-          Top {popularBanks.length}
+          Top 10
         </span>
       </div>
 
-      <ul
-        className="-mx-4 mt-4 flex gap-3 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-      >
-        {popularBanks.map((bank) => (
-          <li key={bank.name} className="w-[4.75rem] shrink-0">
-            <Link
-              href={`/bank/${bankSlug(bank.name)}`}
-              prefetch
-              onClick={() => {
-                const payload = JSON.stringify({ bankName: bank.name })
-                const delivered =
-                  typeof navigator !== 'undefined' && typeof navigator.sendBeacon === 'function'
-                    ? navigator.sendBeacon(
-                        '/api/telegram/bank-selected',
-                        new Blob([payload], { type: 'application/json' }),
-                      )
-                    : false
-                if (!delivered) {
-                  void fetch('/api/telegram/bank-selected', {
-                    method: 'POST',
-                    headers: { 'content-type': 'application/json' },
-                    body: payload,
-                    keepalive: true,
-                  }).catch(() => undefined)
-                }
-              }}
-              className="group block focus-visible:outline-none"
-            >
-              <BankTile bank={bank} />
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="group/marquee -mx-4 mt-4 overflow-hidden px-4">
+        <ul className="animate-marquee flex w-max gap-3 pb-1" aria-label="Top 10 banks">
+          {[...topTenBanks, ...topTenBanks].map((bank, index) => (
+            <BankLink key={`${bank.name}-${index}`} bank={bank} />
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }

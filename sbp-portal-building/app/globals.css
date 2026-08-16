@@ -183,19 +183,19 @@
   }
 }
 
-/* Continuous left-scrolling marquee for the Popular Banks rail.
-   Translates exactly one copy width (-50%) so the duplicated track loops seamlessly. */
-@keyframes marquee-left {
+/* Continuous right-scrolling marquee for the Top 10 Banks rail.
+   Translates exactly one copy width (50%) so the duplicated track loops seamlessly. */
+@keyframes marquee-right {
   from {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
 }
 
 .animate-marquee {
-  animation: marquee-left 28s linear infinite;
+  animation: marquee-right 28s linear infinite;
   will-change: transform;
 }
 
