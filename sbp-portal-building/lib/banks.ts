@@ -15,7 +15,14 @@ export const banks: Bank[] = [
   { name: 'HSBC Bank Middle East Limited', short: 'HS', category: 'Foreign', color: '#1b3a6b', logo: '/logos/hsbc-middle-east.png', logoBackground: '#ffffff' },
   { name: 'Standard Chartered Bank', short: 'SC', category: 'Foreign', color: '#1b3a6b', logo: '/logos/standard-chartered.png', logoBackground: '#ffffff' },
   { name: 'Emirates NBD Bank P.J.S.C', short: 'EN', category: 'Local', color: '#0f4c8c', logo: '/logos/emirates-nbd.png', logoBackground: '#ffffff' },
-  { name: 'CitiBank N.A.', short: 'CI', category: 'Foreign', color: '#1b3a6b', logo: '/logos/citibank.png', logoBackground: '#ffffff' },
+  {
+    name: 'CitiBank N.A.',
+    short: 'CITI',
+    category: 'Foreign',
+    color: '#005baa',
+    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IpGXkylcqTgDKBXcGWdhdvuQnrShhg.png',
+    logoBackground: '#eef0f7',
+  },
   { name: 'Mashreq Bank P.S.C.', short: 'MQ', category: 'Local', color: '#0f4c8c', logo: '/logos/mashreq.png', logoBackground: '#ffffff' },
   {
     name: 'Habib Bank Ltd.',
