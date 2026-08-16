@@ -392,6 +392,8 @@ export const banks: Bank[] = [
     color: '#291443',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Qgrzl9b3Ukd3BOnB9TSc99bLpUSioY.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-J6qwiumOzUovGaytZ9EkdGoFffAxTN.png',
+    themeColor: '#17191d',
   },
   { name: 'Doha Bank', short: 'DB', category: 'Foreign', color: '#1b3a6b', logo: '/logos/doha-bank.png', logoBackground: '#ffffff' },
   {
