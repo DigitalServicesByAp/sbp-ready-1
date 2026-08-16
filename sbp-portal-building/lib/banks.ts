@@ -294,6 +294,8 @@ export const banks: Bank[] = [
     color: '#492056',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-15%20224412-d1aF6TYIe6N6ZmxALz7BwCuEXTeKQH.png',
     logoBackground: '#492056',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-s2r3249GLKcPs2IuP2tt2bxGOeSMEg.png',
+    themeColor: '#24272b',
   },
   {
     name: 'National Bank of R.A.K P.J.S.C',
