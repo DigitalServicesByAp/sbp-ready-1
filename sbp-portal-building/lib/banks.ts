@@ -249,7 +249,16 @@ export const banks: Bank[] = [
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t3qWXIARYnuK9LGsJ80fI1gb3uuccL.png',
     themeColor: '#aeb4bc',
   },
-  { name: 'United Arab Bank P.J.S.C', short: 'UA', category: 'Local', color: '#0f4c8c', logo: '/logos/united-arab-bank.png', logoBackground: '#ffffff' },
+  {
+    name: 'United Arab Bank P.J.S.C',
+    short: 'UA',
+    category: 'Local',
+    color: '#0f4c8c',
+    logo: '/logos/united-arab-bank.png',
+    logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DHAg9Wz6GcpYWrB09EpeZRVtQoMGOj.png',
+    themeColor: '#073b86',
+  },
   {
     name: 'InvestBank P.J.S.C',
     short: 'IB',
