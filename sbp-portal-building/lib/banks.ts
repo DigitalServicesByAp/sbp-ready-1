@@ -452,6 +452,8 @@ export const banks: Bank[] = [
     color: '#003399',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-pg2u9ho4L8BDzcPSUQpQWr3UyuDQIz.png',
     logoBackground: '#ffffff',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-kP9oYZOJ9vKB1R8HRc7vvj9oVr5ixd.png',
+    themeColor: '#8a5b17',
   },
   {
     name: 'KEB Hana Bank',
