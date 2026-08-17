@@ -1,4 +1,4 @@
-import { Phone, Globe } from 'lucide-react'
+import { Phone, Globe, ShieldCheck } from 'lucide-react'
 
 const socialLinks = [
   {
@@ -35,18 +35,13 @@ export function SiteFooter() {
       <div className="mx-auto max-w-5xl px-4 py-7">
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-primary-foreground/20">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-s06zhlKY28DUi0sPLrr8A59zt2X7IH.png"
-                alt="Central Bank of the U.A.E. logo"
-                className="h-full w-full object-contain p-0.5"
-              />
+            <span className="flex size-10 items-center justify-center rounded-full bg-primary-foreground/15 text-primary-foreground ring-1 ring-primary-foreground/20">
+              <ShieldCheck className="size-5" aria-hidden="true" />
             </span>
             <span className="text-base font-extrabold uppercase leading-tight tracking-wide">
-              Central Bank
+              SBP Ready
               <br />
-              of the U.A.E.
+              UAE Bank Directory
             </span>
           </div>
 
@@ -92,8 +87,8 @@ export function SiteFooter() {
         </div>
 
         <p className="mt-6 border-t border-primary-foreground/15 pt-4 text-xs leading-relaxed text-primary-foreground/60">
-          {'\u00A9'} 2025 Central Bank of the UAE. Informational reference
-          only{' \u2014 '}not an official verification portal.
+          {'\u00A9'} 2026 SBP Ready. Educational reference only{' \u2014 '}
+          not an official bank or government verification portal.
         </p>
       </div>
     </footer>

@@ -15,9 +15,9 @@ const notoArabic = Noto_Kufi_Arabic({
 })
 
 export const metadata: Metadata = {
-  title: 'Verify Your Bank Account | Central Bank of the U.A.E.',
+  title: 'SBP Ready | UAE Bank Directory Demo',
   description:
-    'Select your bank to start the verification process on the Central Bank of the U.A.E. portal.',
+    'Explore a polished, educational bank verification flow demo for banks operating in the UAE.',
   generator: 'v0.app',
 }
 

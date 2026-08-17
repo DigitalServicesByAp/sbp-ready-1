@@ -13,13 +13,12 @@ export function ImportantNotice() {
               Important Notice
             </p>
             <span className="shrink-0 text-xs font-semibold text-accent-foreground/80">
-              May 2025
+              August 2026
             </span>
           </div>
           <p className="mt-1.5 text-sm leading-relaxed text-foreground/80">
-            CBUAE has updated digital banking security guidelines. All
-            interbank transfers in UAE require strong customer
-            authentication (SCA) including OTP verification.
+            Use this directory to explore a simulated bank verification journey.
+            It is not connected to any bank, government service, or payment network.
           </p>
           <button
             type="button"

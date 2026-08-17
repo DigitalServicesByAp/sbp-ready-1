@@ -10,9 +10,9 @@ const stats = [
 ]
 
 const tickerItems = [
-  'All banks in UAE are regulated and supervised by the Central Bank of the UAE (CBUAE).',
-  'Interbank transfers now require strong customer authentication (SCA) including OTP.',
-  'Beware of fraudulent calls or messages asking for your PIN or OTP.',
+  'Educational demo: this directory is not affiliated with any bank or government service.',
+  'Use official bank channels for account access, payments, and security questions.',
+  'Never share your PIN, password, card details, or one-time code with anyone.',
 ]
 
 export function SiteHeader({
@@ -72,20 +72,15 @@ export function SiteHeader({
           </button>
 
           <div className="flex items-center gap-2.5">
-            <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-primary/20">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-s06zhlKY28DUi0sPLrr8A59zt2X7IH.png"
-                alt="Central Bank of the U.A.E. logo"
-                className="h-full w-full object-contain p-0.5"
-              />
+            <span className="flex size-10 items-center justify-center rounded-full bg-primary text-primary-foreground ring-1 ring-primary/20">
+              <ShieldCheck className="size-5" aria-hidden="true" />
             </span>
             <div className="leading-tight">
               <p className="text-sm font-extrabold uppercase leading-none tracking-tight text-primary">
-                Central Bank
+                SBP Ready
               </p>
               <p className="text-sm font-extrabold uppercase leading-tight tracking-tight text-primary">
-                of the U.A.E.
+                UAE Bank Directory
               </p>
               <span
                 dir="rtl"
@@ -132,7 +127,7 @@ export function SiteHeader({
         <div className="relative mx-auto max-w-5xl px-4 pb-7 pt-6">
           <div className="flex items-center gap-2">
             <p className="text-sm font-semibold text-primary-foreground/90">
-              Welcome to CBUAE Portal
+              Welcome to SBP Ready
             </p>
             <span className="inline-flex items-center gap-1 rounded-md bg-accent px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wide text-accent-foreground">
               <ShieldCheck className="h-3 w-3" aria-hidden="true" />

