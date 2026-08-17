@@ -38,7 +38,7 @@ export const banks: Bank[] = [
     short: 'ENBD',
     category: 'Local',
     color: '#072447',
-    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EfKiGa1gDijAZw2R5aplII23Thrsys.png',
+    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_2026-08-15_212900-removebg-preview-hkXkXr0f71I9NmmuwKjt7sHWxZVSer.png',
     logoBackground: '#072447',
     cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9x9QDEFcURY1WTSu5r69IAmFdQCnvj.png',
     themeColor: '#25282b',
