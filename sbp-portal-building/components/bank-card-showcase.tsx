@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import type { Bank } from '@/lib/banks'
 import { BankLogo } from '@/components/bank-logo'
 
@@ -8,12 +9,15 @@ export function BankCardShowcase({ bank }: { bank: Bank }) {
     <div className="relative px-0 py-0">
       {bank.cardImage ? (
         <div className="relative flex items-center justify-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={bank.cardImage || '/placeholder.svg'}
+          <Image
+            src={bank.cardImage}
             alt={`${bank.name} debit card`}
+            width={1536}
+            height={1024}
+            sizes="(max-width: 448px) 100vw, 384px"
+            priority
+            fetchPriority="high"
             className="h-auto w-full max-w-[24rem] rounded-2xl object-contain"
-            crossOrigin="anonymous"
           />
         </div>
       ) : (
