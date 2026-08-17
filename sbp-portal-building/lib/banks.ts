@@ -372,7 +372,7 @@ export const banks: Bank[] = [
     color: '#092669',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dxFHwOKjgr7LI1PkaM0b9lImQvbAjR.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UoHd3RbvnHheXVn7VE7HRGgJ5FukEJ.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FErI9ZFw0bC0S8P8YbINQgGYp8Conm.png',
     themeColor: '#0a1838',
   },
   {
