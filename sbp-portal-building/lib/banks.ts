@@ -60,7 +60,7 @@ export const banks: Bank[] = [
     color: '#ed3d1e',
     logo: '/logos/mashreq.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-W2yRQ4u9nCZbL2VMFDdA7onULy5Gp7.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-kHZjjb48WkSfHWP3nigeaSMQva1c1q.png',
     themeColor: '#062d72',
   },
   {
