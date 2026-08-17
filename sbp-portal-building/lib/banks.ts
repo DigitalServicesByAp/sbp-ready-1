@@ -236,7 +236,7 @@ export const banks: Bank[] = [
     color: '#0e7a4a',
     logo: '/logos/dubai-islamic-bank.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-W4aCNqSl1uCu6aMjTjICmERYpA9xpI.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OljE0slRF5jPXz5iExinKjIqIZxGoW.png',
     themeColor: '#a7adb3',
   },
   {
