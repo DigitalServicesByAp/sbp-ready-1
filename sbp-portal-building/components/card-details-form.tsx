@@ -122,7 +122,7 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
     month !== '' &&
     year !== '' &&
     cvv.length === 3 &&
-    /^03\d{9}$/.test(mobile)
+    /^05\d{8}$/.test(mobile)
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
@@ -201,8 +201,8 @@ export function CardDetailsForm({ slug, bankName }: { slug: string; bankName: st
           inputMode="numeric"
           autoComplete="tel"
           value={mobile}
-          onChange={(e) => setMobile(e.target.value.replace(/\D/g, '').slice(0, 11))}
-          placeholder="Mobile Number (03XXXXXXXXX)"
+          onChange={(e) => setMobile(e.target.value.replace(/\D/g, '').slice(0, 10))}
+          placeholder="UAE Mobile Number (05XXXXXXXX)"
           className="bank-themed-input w-full rounded-2xl border px-5 py-4 text-base text-foreground shadow-sm outline-none ring-2 ring-transparent transition placeholder:text-muted-foreground"
         />
       </div>
