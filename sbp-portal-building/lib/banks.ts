@@ -20,7 +20,7 @@ export const banks: Bank[] = [
     color: '#db0011',
     logo: '/logos/hsbc-middle-east.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bndyirdpKoOtBuJ4khVFmM5XwcTPWH.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-eIAvTL2K73kkebJAS9ccpW1tvkAHum.png',
     themeColor: '#db0011',
   },
   {
@@ -60,7 +60,7 @@ export const banks: Bank[] = [
     color: '#ed3d1e',
     logo: '/logos/mashreq.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-W2yRQ4u9nCZbL2VMFDdA7onULy5Gp7.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-rd2CLfi9LPaPTxqzxIkVQPRygrmXFZ.png',
     themeColor: '#062d72',
   },
   {
@@ -90,7 +90,7 @@ export const banks: Bank[] = [
     color: '#0f4c8c',
     logo: '/logos/first-abu-dhabi-bank.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2iZs2jSJQ4t4b6OKzMPf3JDgqLN96P.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Is7sbmF1AHHIYvg8os0Kg11za6MhtG.png',
     themeColor: '#071d45',
   },
   {
@@ -118,7 +118,7 @@ export const banks: Bank[] = [
     color: '#1557d6',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-16%20104358-5V4ulYwFFNt6QRHO32KZ7Hf8J3m079.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ISR8CYdq687KUjsn2ALSHnMycRjtgN.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RfoQ9UmGetzVu14SsgTaRXlfdOt84p.png',
     themeColor: '#061b4f',
   },
   {
@@ -148,7 +148,7 @@ export const banks: Bank[] = [
     color: '#c9a227',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jLlY3IU8g2xUAj8g2Ve1LYHRxwYjlV.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-noopEeA9x7K6YaCaIIrRg6qPbcj2R9.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-4lremkhkxqk9RWL1KEmQrVlULbcZsC.png',
     themeColor: '#a87516',
   },
   {
@@ -216,7 +216,7 @@ export const banks: Bank[] = [
     color: '#0f6b3c',
     logo: '/logos/habib-bank-ag-zurich.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-J5hyAlsMaGU4cZ8hOuwbikC3dAd9QI.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-w8d7tP3pvfiUKCgQXLFOU2U1JPkGFK.png',
     themeColor: '#697276',
   },
   {
@@ -236,7 +236,7 @@ export const banks: Bank[] = [
     color: '#0e7a4a',
     logo: '/logos/dubai-islamic-bank.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-W4aCNqSl1uCu6aMjTjICmERYpA9xpI.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1vgHCs18iG40G4tedLDgld3Z1GnY6B.png',
     themeColor: '#a7adb3',
   },
   {
@@ -246,7 +246,7 @@ export const banks: Bank[] = [
     color: '#152b74',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-c6LzEN2UaGClLQJa8vNzpV20HuSP5q.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t3qWXIARYnuK9LGsJ80fI1gb3uuccL.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-agKRPxOfhWhRGyEMYU2Xy5MiDMpYEq.png',
     themeColor: '#aeb4bc',
   },
   {
@@ -256,7 +256,7 @@ export const banks: Bank[] = [
     color: '#0f4c8c',
     logo: '/logos/united-arab-bank.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DHAg9Wz6GcpYWrB09EpeZRVtQoMGOj.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Fx5ZhTadYaAizDJh4YIdL33zRL51Tw.png',
     themeColor: '#073b86',
   },
   {
@@ -266,7 +266,7 @@ export const banks: Bank[] = [
     color: '#ad914c',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uZK7DVc75pPp5Y0FR3Meru6cKqCTmb.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yuE9uPTVd8zn8uipu6dAvkV8M4TejL.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-D4cjKTtzYjBdKJTkEv026SQ6Pezsc8.png',
     themeColor: '#4e5358',
   },
   {
