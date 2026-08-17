@@ -90,7 +90,7 @@ export const banks: Bank[] = [
     color: '#0f4c8c',
     logo: '/logos/first-abu-dhabi-bank.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2iZs2jSJQ4t4b6OKzMPf3JDgqLN96P.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0WZku8iE2xDQX6J8pX8KXMtTcjGTz.png',
     themeColor: '#071d45',
   },
   {
