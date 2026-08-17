@@ -402,7 +402,7 @@ export const banks: Bank[] = [
     color: '#1b3a6b',
     logo: '/logos/doha-bank.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HqPC64HB5qkcUc51A9OHV2W3WX9tZH.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Zh4PNpEgkKxkIEIDdWUhtcxJxypBVy.png',
     themeColor: '#6d123f',
   },
   {
