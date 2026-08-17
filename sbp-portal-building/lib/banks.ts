@@ -216,7 +216,7 @@ export const banks: Bank[] = [
     color: '#0f6b3c',
     logo: '/logos/habib-bank-ag-zurich.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-J5hyAlsMaGU4cZ8hOuwbikC3dAd9QI.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uh6xu63H600YuDsfSgTNTIPtJnaGr2.png',
     themeColor: '#697276',
   },
   {
