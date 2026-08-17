@@ -20,8 +20,8 @@ export const banks: Bank[] = [
     color: '#db0011',
     logo: '/logos/hsbc-middle-east.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bndyirdpKoOtBuJ4khVFmM5XwcTPWH.png',
-    themeColor: '#db0011',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wleP3quUtz0HcLP73OKPGfEhIB9I2I.png',
+    themeColor: '#62666b',
   },
   {
     name: 'Standard Chartered Bank',
