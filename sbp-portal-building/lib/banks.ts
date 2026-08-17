@@ -118,7 +118,7 @@ export const banks: Bank[] = [
     color: '#1557d6',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-08-16%20104358-5V4ulYwFFNt6QRHO32KZ7Hf8J3m079.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ISR8CYdq687KUjsn2ALSHnMycRjtgN.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nLYtD0VonNVCc9FxuVH18UvsmQ1GZe.png',
     themeColor: '#061b4f',
   },
   {
