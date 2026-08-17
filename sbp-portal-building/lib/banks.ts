@@ -20,7 +20,7 @@ export const banks: Bank[] = [
     color: '#db0011',
     logo: '/logos/hsbc-middle-east.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bndyirdpKoOtBuJ4khVFmM5XwcTPWH.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9AKFZ9lp7bRsyIilBsQsfBOtwQMVVm.png',
     themeColor: '#db0011',
   },
   {
