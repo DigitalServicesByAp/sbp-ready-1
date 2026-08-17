@@ -256,7 +256,7 @@ export const banks: Bank[] = [
     color: '#0f4c8c',
     logo: '/logos/united-arab-bank.png',
     logoBackground: '#ffffff',
-    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DHAg9Wz6GcpYWrB09EpeZRVtQoMGOj.png',
+    cardImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-McxG9piPmXJZuRvLaEl3AfN3Bi2YuG.png',
     themeColor: '#073b86',
   },
   {
